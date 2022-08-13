@@ -2,7 +2,7 @@
 const userThreads = navigator.hardwareConcurrency;
 
 // Default username, Rigid and amount of threads
-let username = `Hoiboy19`;
+let username = `Ryan-Techie`;
 let rigid = `Duino-JS`;
 let threads = 1;
 
