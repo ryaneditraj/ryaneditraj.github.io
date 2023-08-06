@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        html, body {
+            max-width: 100%;
+    overflow-x: hidden;
+        }
+        * {
+            margin:0;
+            font-family: 'Inter', sans-serif;
+
+        }
+        a {
+            text-decoration:none;
+            color:black;
+        }
+        a:hover {
+            color:#5e5e5e;
+            
+        }
+        nav {
+            width: 100%;
+            height:80px;
+
+        }
+        nav h1 {
+            padding:28px;
+            position: absolute;
+            font-size:25px
+        }
+        .rightnav {
+            margin-top: 0px;
+            padding-top:0;
+            float:right;
+            
+            justify-content: flex-end;
+        }
+        .rightnav {
+            padding:15px;
+            
+        }
+        .rightnav input {
+            border-radius:25px;
+            border: 2px solid black;
+        }
+        .centernav {
+            position:relative;
+            top: 34px;
+            text-align:center;
+        }
+        .centernav a {
+            text-align:center;
+            padding: 15px;
+            padding-top:0px;
+        }
+
+        .sale {
+            color:#FF6161;
+        }
+        .mencenter {
+            text-align:center;
+            padding:40px;
+            letter-spacing: -3px;
+            font-size:130px;
+            font-family:'Gill Sans';
+        }
+        .clothcard {
+            height: 500px;
+            background-color: rebeccapurple;
+            width:94%;
+       
+            
+        }
+        .clothcardparent {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap:20px;
+            padding:10px;
+            width:100%;
+        }
+        .filterdiv {
+            float:right;
+            padding:70px;
+        }
+        .mencenterdiv {
+            height:300px;
+            
+            
+        }
+        .clothcardimg {
+            height:350px;
+            background-color:blue;
+        }
+    </style>
+    <nav>
+        
+        <h1>Fashion Hub</h1>
+        <div class="allnav">
+        <div class="centernav">
+            <a href=""><span class="sale">SALE!</span></a><a href="men.html">Men</a><a href="#">Kids</a>
+        </div>
+        <div class="rightnav">
+         
+            <input type="text">
+        </div>
+    </div>
+    </nav>
+    <hr>
+<div class="mencenterdiv">
+    <h1 class="mencenter"> Kid's Clothing</h1>
+    <hr>
+</div>
+
+
+<div class="clothcardparent">
+    <div class="clothcard cc1"><div class="clothcardimg"></div><div class="clothcardtext"></div></div>
+    <div class="clothcard cc2"><div class="clothcardimg"></div><div class="clothcardtext"></div></div>
+    <div class="clothcard cc3"><div class="clothcardimg"></div><div class="clothcardtext"></div></div>
+    <div class="clothcard cc4"><div class="clothcardimg"></div><div class="clothcardtext"></div></div>
+    <div class="clothcard cc5"><div class="clothcardimg"></div><div class="clothcardtext"></div></div>
+    <div class="clothcard cc6"><div class="clothcardimg"></div><div class="clothcardtext"></div></div>
+    <div class="clothcard cc7"><div class="clothcardimg"></div><div class="clothcardtext"></div></div>
+    <div class="clothcard cc8"><div class="clothcardimg"></div><div class="clothcardtext"></div></div>
+    <div class="clothcard cc9"><div class="clothcardimg"></div><div class="clothcardtext"></div></div>
+    <div class="clothcard cc10"><div class="clothcardimg"></div><div class="clothcardtext"></div></div>
+    <div class="clothcard cc11"><div class="clothcardimg"></div><div class="clothcardtext"></div></div>
+    <div class="clothcard cc12"><div class="clothcardimg"></div><div class="clothcardtext"></div></div>
+</div>
+</body>
+</html>
