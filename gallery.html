@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.js"></script>
+    <title>Ryan Editraj</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Import PhotoSwipe Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/default-skin/default-skin.css">
+  
+    <!-- A touch of fanciness 💄 -->
+    <link href='https://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+    <style>
+
+
+      .pswp__caption__center {text-align: center;}
+      figure {
+        display: inline-block;
+        width: 33.333%;
+        float: left;
+      }
+      body {
+        background-color: rgb(23, 23, 23);
+      }
+      img {width: 100%;}
+      .spacer {height: 5em;}
+    </style>
+</head>
+<body>
+    <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    
+    <div class="uk-navbar-left">
+        <a href="" class="uk-navbar-item uk-logo uk-light">Ryan Editraj.</a>
+    </div>
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav uk-light">
+            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>About</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="mailto:" uk-scroll>Contact</a></li>
+
+        </ul>
+
+    </div>
+</nav>
+
+<nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <div class="uk-navbar-left">
+        <a href="#" class="uk-navbar-item uk-logo uk-light">Ryan Editraj.</a>
+    </div>
+    <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav uk-light">
+            <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
+        </ul>
+    </div>
+</nav>
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            <li class="uk-active"><a href="#" uk-scroll>Home</a></li>
+            <li class="uk-active"><a href="#about" uk-scroll>About</a></li>
+            <li class="uk-active"><a href="mailto:">Contact</a></li> 
+
+        </ul>
+
+    </div>
+</div>
+
+<section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+    <h1 class="uk-margin-xlarge-left uk-light uk-text-center uk-margin-xlarge-right center">
+        Gallery<br>
+        
+    </h1>
+
+    <div class="spacer"></div>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+        
+    <div id="gallery" class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+        <!-- Use figure for a more semantic html -->
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <!-- Link to the big image, not mandatory, but usefull when there is no JS -->
+          <a href="headshot.JPG" data-caption="" data-width="1200" data-height="900" itemprop="contentUrl">
+            <!-- Thumbnail -->
+            <img src="headshot.JPG" itemprop="thumbnail" alt="Picture of Ryan Editraj, Studying in , , . Wearing a black T-shirt outside a house.">
+          </a>
+        </figure>
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="yellow_shirt.jpg" data-caption="" data-width="1200" data-height="900" itemprop="contentUrl">
+            <img src="yellow_shirt.jpg" itemprop="thumbnail" alt="Picture of Ryan Editraj, Studying in , , . Wearing a yellow shirt with Mandarin Collar.">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="ryan_dressed.png" data-caption="" data-width="1200" data-height="900" itemprop="contentUrl">
+            <img src="ryan_dressed.png" itemprop="thumbnail" alt="Picture of Ryan Editraj, Studying in , , . Dressed in a Blue and white Suit and blue coloured tie.">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="profile.png" data-caption="" data-width="1200" data-height="900" itemprop="contentUrl">
+            <img src="profile.png" itemprop="thumbnail" alt="Picture of Ryan Editraj, Studying in , , . Profile picture wearing a casual t-shirt in a greenish area.">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="sunglass.png" data-caption="" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img src="sunglass.png" itemprop="thumbnail" alt="Picture of Ryan Editraj, Studying in , , . Wearing sunglasses and a casual orange adidas t-shirt in Muttom Beach.">
+            </a>
+          </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="mirror.JPG" data-caption="" data-width="1200" data-height="900" itemprop="contentUrl">
+            <img src="mirror.JPG" itemprop="thumbnail" alt="Picture of Ryan Editraj, Studying in , , . Wearing a black tshirt and standing infront of a mirror with nikon d3400 DSLR Camera.">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="kadiapattinam.JPG" data-caption="Sea side, south shore<br><em class='text-muted'>© Julien Lavallée</em>" data-width="1200" data-height="900" itemprop="contentUrl">
+            <img src="kadiapattinam.JPG" itemprop="thumbnail" alt="Image description">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="kavin.JPG" data-caption="Sunset on the highland road<br><em class='text-muted'>© Forrest Cavale</em>" data-width="1200" data-height="900" itemprop="contentUrl">
+            <img src="kavin.JPG" itemprop="thumbnail" alt="Image description">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="out1.JPG" data-caption="Seljalandsfoss waterfall<br><em class='text-muted'>© Jeff Sheldon</em>" data-width="1200" data-height="900" itemprop="contentUrl">
+            <img src="out1.JPG" itemprop="thumbnail" alt="Image description">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="out2.JPG" data-caption="Fjadrarglufur canyon, south shore<br><em class='text-muted'>© Jeff Sheldon</em>" data-width="1200" data-height="900" itemprop="contentUrl">
+            <img src="out2.JPG" itemprop="thumbnail" alt="Image description">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="out3.JPG" data-caption="Eerie wreckage of a crashed U.S. Navy aircraft<br><em class='text-muted'>© Jeff Sheldon</em>" data-width="1200" data-height="900" itemprop="contentUrl">
+            <img src="out3.JPG" itemprop="thumbnail" alt="Image description">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="out4.JPG" data-caption="Blue Lagoon<br><em class='text-muted'>© Jeff Sheldon</em>" data-width="1200" data-height="900" itemprop="contentUrl">
+            <img src="out4.JPG" itemprop="thumbnail" alt="Image description">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="out5.JPG" data-caption="" data-width="1200" data-height="900" itemprop="contentUrl">
+            <img src="out5.JPG" itemprop="thumbnail" alt="Image description">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="porsche.JPG" data-caption="" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img src="porsche.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="sunset_horizontal.JPG" data-caption="" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img src="sunset_horizontal.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+          </figure>
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="sunset_vertical.JPG" data-caption="" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img src="sunset_vertical.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+          </figure>
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="tony.JPG" data-caption="" data-width="1200" data-height="900"   itemprop="contentUrl">
+              <img src="tony.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+          </figure>
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="wave.JPG" data-caption="" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img src="wave.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+          </figure>
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="wave_2.JPG" data-caption="" data-width="1200" data-height="900" itemprop="contentUrl">
+              <img src="wave_2.JPG" itemprop="thumbnail" alt="Image description">
+            </a>
+          </figure>
+          
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Some spacing 😉 -->
+<div class="spacer"></div>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Import jQuery and PhotoSwipe Scripts -->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe-ui-default.min.js"></script>
+
+<script>
+  'use strict';
+
+  /* global jQuery, PhotoSwipe, PhotoSwipeUI_Default, console */
+
+  (function($){
+
+    // Init empty gallery array
+    var container = [];
+
+    // Loop over gallery items and push it to the array
+    $('#gallery').find('figure').each(function(){
+      var $link = $(this).find('a'),
+          item = {
+            src: $link.attr('href'),
+            w: $link.data('width'),
+            h: $link.data('height'),
+            title: $link.data('caption')
+          };
+      container.push(item);
+    });
+
+    // Define click event on gallery item
+    $('a').click(function(event){
+
+      // Prevent location change
+      event.preventDefault();
+
+      // Define object and gallery options
+      var $pswp = $('.pswp')[0],
+          options = {
+            index: $(this).parent('figure').index(),
+            bgOpacity: 0.85,
+            showHideOpacity: true
+          };
+
+      // Initialize PhotoSwipe
+      var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
+      gallery.init();
+    });
+
+  }(jQuery));
+</script>
+<hr>
+</body>
+</html>
