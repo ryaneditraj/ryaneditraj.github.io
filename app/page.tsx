@@ -1,21 +1,21 @@
 import { JsonLd } from "@/components/json-ld";
-import { ProjectIndex } from "@/components/project-index";
+import { LaneTable } from "@/components/lane-table";
 import { Shell } from "@/components/shell";
-import { getNow, getSite, published, readCollection } from "@/lib/content";
+import { getNow, getSite } from "@/lib/content";
+import { bridge, buildRows, hero, learnRows, proofRows } from "@/lib/lanes";
 import { personId, websiteId, buildMeta } from "@/lib/seo";
 import { getSiteUrl } from "@/lib/site-url";
 
 export const metadata = buildMeta({
   path: "/",
-  title: "Ryan Editraj — Founder of MoneyRadar and Thugir Group",
+  title: "Ryan Editraj — The bridge from non-tech to tech",
   description:
-    "Ryan Editraj is 16 and is based in Tamil Nadu, India. He is founder of MoneyRadar and Thugir Group. Thugir Labs is autonomous security research in a closed beta.",
+    "Ryan Editraj is 16. He builds security and AI products, and he explains tech so anyone can use it. Based in India.",
 });
 
 export default function HomePage() {
   const site = getSite();
   const now = getNow();
-  const projects = published(readCollection("projects")).filter((project) => project.featured).slice(0, 6);
   const origin = getSiteUrl();
   return (
     <Shell section="Home">
@@ -38,9 +38,7 @@ export default function HomePage() {
             name: site.name,
             url: origin,
             email: site.email,
-            address: { "@type": "PostalAddress", addressRegion: "Tamil Nadu", addressCountry: "IN" },
-            description:
-              "Founder of MoneyRadar and Thugir Group. He states that he is 16. Based in Tamil Nadu, India. Checked 23 October 2026.",
+            description: `${hero} ${bridge} He states that he is 16. Based in India.`,
             jobTitle: "Founder",
             sameAs: site.socials.filter((social) => social.href.startsWith("http")).map((social) => social.href),
             homeLocation: { "@type": "Place", name: site.location },
@@ -54,66 +52,67 @@ export default function HomePage() {
           },
         ]}
       />
-      <p className="kicker">Tamil Nadu, India · Age 16</p>
-      <h1>Founder of MoneyRadar and Thugir Group.</h1>
-      <p className="lede">
-        {site.name} is 16. {site.positioning} Thugir Labs is autonomous security research for pentesters, security teams, and MSPs, in a free closed beta.
-      </p>
+      <p className="kicker">India · Age 16</p>
+      <h1 className="h1-poster">{hero}</h1>
+      <p className="lede">{bridge} Founder of Thugir Group. He states that he is 16.</p>
       <p>
-        <a className="stamp" href="/collaborate">
-          Start a collaboration
+        <a className="stamp" href="/build">
+          See what he builds
+        </a>{" "}
+        <a className="ghost" href="/learn/start">
+          New to tech
         </a>
       </p>
-      <div className="grid-2">
-        <section>
-          <h2>Who is Ryan Editraj?</h2>
-          <p className="measure">
-            MoneyRadar and Thugir Labs name him founder. Thugir Group is the parent of both. No company registration was found, so the title is the one on his own sites and profiles, checked 23 October 2026.
-          </p>
-          <p className="measure">
-            He states that at 14 he found a CVSS 9.8 vulnerability, that a patent is pending, that one Thugir Labs build was 138,936 lines of code, and that he placed first at a Liya Tech hackathon. Those are his statements. This page does not add a report id, a patent number, or a second source.
-          </p>
-        </section>
-        <aside>
-          <h2>At a glance</h2>
-          <dl className="facts">
-            <div>
-              <dt>Based</dt>
-              <dd>{site.location}</dd>
-            </div>
-            <div>
-              <dt>Timezone</dt>
-              <dd>{site.timezone}</dd>
-            </div>
-            <div>
-              <dt>Age</dt>
-              <dd>
-                16
-                <div className="meta">Stated on his X bio, checked 23 October 2026.</div>
-              </dd>
-            </div>
-            <div>
-              <dt>Email</dt>
-              <dd>
-                <a href={`mailto:${site.email}`}>{site.email}</a>
-              </dd>
-            </div>
-          </dl>
-        </aside>
-      </div>
       <section className="section">
-        <h2>What does he build?</h2>
-        <p className="measure">Selected repositories. Each one links to a page with the source of the description.</p>
-        <ProjectIndex projects={projects} />
+        <h2>Who is Ryan Editraj?</h2>
+        <p className="measure">
+          A creator-founder in India. He builds security and AI products under Thugir Group, including MoneyRadar and Thugir Labs, and he explains that work in public so someone outside the field can use it. Instagram is{" "}
+          <a href="https://www.instagram.com/ryaneditraj/">@ryaneditraj</a>.
+        </p>
       </section>
       <section className="section">
-        <h2>How do you collaborate?</h2>
-        <p className="measure">
-          Write through the inquiry. Say who you are, what should exist at the end, and the budget band. There is no countdown. Mentorship booking is not open.
-        </p>
+        <h2>What does he build?</h2>
+        <LaneTable rows={buildRows} linkLabel="Open" />
         <p>
-          <a className="ghost" href="/services">
-            See the services
+          <a className="ghost" href="/build">
+            The build index
+          </a>
+        </p>
+      </section>
+      <section className="section">
+        <h2>Where does he explain it?</h2>
+        <LaneTable rows={learnRows} linkLabel="Open" />
+      </section>
+      <section className="section">
+        <h2>What can you check?</h2>
+        <p className="measure">Verified items only. A claim without a public source is not on this wall.</p>
+        <table className="index">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Check</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            {proofRows.map((row) => (
+              <tr key={row.item}>
+                <td data-label="Item">{row.item}</td>
+                <td data-label="Check">{row.check}</td>
+                <td data-label="Link">
+                  <a href={row.href}>{row.label}</a>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+      <section className="section">
+        <h2>How do you reach him?</h2>
+        <p className="measure">Use the form. This site does not publish a street address.</p>
+        <p>
+          <a className="stamp" href="/contact">
+            Open the contact form
           </a>
         </p>
       </section>

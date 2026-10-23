@@ -18,7 +18,7 @@
     "title": "Building",
     "status": "published",
     "summary": "Collaborations around the products he already publishes: MoneyRadar and Thugir Labs.",
-    "body": "MoneyRadar is a set of free finance calculators and guides for India. The site says they are not SEBI advice. Thugir Labs is a free closed beta: autonomous security research for pentesters, security teams, and MSPs. Thugir Group is the parent of both, and Ryan is the founder.\n\nA collaboration starts from the inquiry. This page does not describe how the security research runs, and it does not quote a fee.\n\nTODO(Ryan): say what you will and will not take on.",
+    "body": "MoneyRadar is a set of free finance calculators and guides for India. The site says they are not SEBI advice. Thugir Labs is a closed beta for security research. Thugir Group is the parent of both, and Ryan is the founder.\n\nA collaboration starts from the form. This page does not describe how the research runs, and it does not quote a fee.\n\nTODO(Ryan): say what you will and will not take on. The audience for Thugir Labs is still open.",
     "categories": ["services"],
     "tags": ["engineering"],
     "createdAt": "2026-10-23T08:00:00.000Z",

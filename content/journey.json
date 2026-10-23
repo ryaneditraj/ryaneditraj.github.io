@@ -43,7 +43,7 @@
     "id": "profile-readme",
     "date": "2026-10-23",
     "title": "Public profiles checked",
-    "body": "X, LinkedIn, GitHub, thugirlabs.com, and moneyradar.in were read on this day. He states that he is 16. The pages here place him in Tamil Nadu, India, and leave out any finer address. The GitHub bio calls him a Linux fan. A school name that appears on some profiles is omitted at his request.",
+    "body": "X, LinkedIn, GitHub, thugirlabs.com, thugir.com, and moneyradar.in were read on this day. He states that he is 16. The pages here place him in India and leave out any finer address. The GitHub bio calls him a Linux fan. A school name that appears on some profiles is omitted at his request.",
     "source": "X API, LinkedIn profile, GitHub users API, thugirlabs.com, and moneyradar.in/about/ryan-editraj, checked 23 October 2026.",
     "status": "published"
   },
@@ -67,7 +67,7 @@
     "id": "thugir-launch-post",
     "date": "2026-05-30",
     "title": "He posts a Thugir Labs launch note",
-    "body": "In his own LinkedIn post he writes that a Thugir Labs build was 138,936 lines of code, built alone, at 16, and that he was launching it on Product Hunt. The post is verified. The Product Hunt launch itself was not found. The line count is his statement, not a count made for this site.",
+    "body": "He posted a launch note for Thugir Labs. Figures in that post are not repeated here.",
     "source": "https://www.linkedin.com/posts/ryaneditraj_cybersecurity-ai-startup-activity-7466561603191324672-MdzD",
     "status": "published"
   },
@@ -82,8 +82,8 @@
   {
     "id": "liya-tech-post",
     "date": "2026-07-13",
-    "title": "He posts a hackathon result",
-    "body": "He writes that he placed first at his first hackathon, hosted by Liya Tech. That is his post. No independent write-up was found, so it is not listed as press.",
+    "title": "He posts about Liya Tech",
+    "body": "The Liya Tech inaugural hackathon was held on 11 July 2026. The organizer and other participants wrote about the event. He posted two days later. This site records that he took part. It does not record a place.",
     "source": "https://www.linkedin.com/posts/ryaneditraj_hackathon-winner-innovation-activity-7482270388954083330-M31_",
     "status": "published"
   }

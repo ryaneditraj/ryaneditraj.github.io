@@ -5,6 +5,7 @@ import { recordFromForm } from "@/lib/admin-form";
 import { generateSlots, isBlocking, overlaps, slotIsFree, type Booking } from "@/lib/bookings";
 import { readCollection } from "@/lib/content";
 import { publicPaths } from "@/lib/directory";
+import { buildRows, learnRows, proofRows } from "@/lib/lanes";
 import { validateInquiry } from "@/lib/inquiry";
 import { verifyRazorpaySignature, verifyStripeSignature } from "@/lib/payments";
 import { rateLimit, resetRateLimit } from "@/lib/rate-limit";
@@ -139,6 +140,17 @@ describe("content", () => {
     expect(readCollection("tools")).toEqual([]);
     expect(readCollection("press")).toEqual([]);
     expect(readCollection("achievements")).toEqual([]);
+  });
+
+  it("keeps the two lanes factual and leaves unverified claims out", () => {
+    const text = JSON.stringify({ buildRows, learnRows, proofRows });
+    for (const name of ["Thugir Labs", "MoneyRadar", "IndiQuant", "Trinity One", "KL-ctf", "Placement Karo", "Hack Club"]) {
+      expect(text).toContain(name);
+    }
+    expect(text).toContain("@ryaneditraj");
+    expect(text).not.toMatch(/328|follower count is \d|CVSS|138,936|patent pending|first place|placed first/i);
+    expect(learnRows.some((row) => row.links.some((link) => link.href.includes("medium.com")))).toBe(true);
+    expect(learnRows.some((row) => row.links.some((link) => link.href.includes("youtube.com")))).toBe(true);
   });
 
   it("has a page for every directory link", () => {

@@ -1,10 +1,15 @@
 {
   "name": "Ryan Editraj",
-  "positioning": "Founder of MoneyRadar and Thugir Group, the parent of MoneyRadar and Thugir Labs.",
-  "location": "Tamil Nadu, India",
+  "positioning": "The bridge from non-tech to tech.",
+  "location": "India",
   "timezone": "Asia/Kolkata",
   "email": "ryaneditraj@gmail.com",
   "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/ryaneditraj/",
+      "note": "Handle @ryaneditraj. No follower count is published."
+    },
     {
       "label": "X",
       "href": "https://x.com/ryaneditraj",
@@ -27,11 +32,10 @@
     }
   ],
   "nav": [
-    { "href": "/directory", "label": "Index" },
-    { "href": "/work", "label": "Work" },
-    { "href": "/lab", "label": "Lab" },
-    { "href": "/notes", "label": "Notes" },
-    { "href": "/collaborate", "label": "Collaborate" }
+    { "href": "/build", "label": "Build" },
+    { "href": "/learn", "label": "Learn" },
+    { "href": "/learn/start", "label": "New to tech" },
+    { "href": "/contact", "label": "Contact" }
   ],
   "budgetRanges": [
     "Not sure yet",

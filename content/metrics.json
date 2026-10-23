@@ -1,28 +1,19 @@
 [
   {
-    "id": "x-followers",
-    "label": "X followers",
-    "value": "22",
-    "note": "A profile count from the X API. Not an audience estimate, and not the same thing as reach.",
-    "source": "X API profile for https://x.com/ryaneditraj, checked 23 October 2026.",
-    "asOf": "2026-10-23",
-    "status": "published"
-  },
-  {
     "id": "linkedin-followers",
     "label": "LinkedIn followers",
     "value": "1,816",
-    "note": "A search snapshot of the profile, plus 500 connections in the same snapshot. Not an export from LinkedIn.",
-    "source": "LinkedIn profile https://linkedin.com/in/ryaneditraj, search snapshot 23 October 2026.",
+    "note": "A count on the profile, checked with the page. Not an export, and not an Instagram figure.",
+    "source": "https://linkedin.com/in/ryaneditraj, checked 23 October 2026.",
     "asOf": "2026-10-23",
     "status": "published"
   },
   {
-    "id": "github-followers",
-    "label": "GitHub followers",
-    "value": "7",
-    "note": "Public followers on the user API. 46 public repositories on the same response.",
-    "source": "GitHub users API for ryaneditraj, fetched 23 October 2026.",
+    "id": "github-stars",
+    "label": "GitHub stars, all public repos",
+    "value": "about 9",
+    "note": "Summed from the users repos API. Not a traction claim.",
+    "source": "https://api.github.com/users/ryaneditraj/repos, read 23 October 2026.",
     "asOf": "2026-10-23",
     "status": "published"
   }

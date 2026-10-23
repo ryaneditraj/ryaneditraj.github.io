@@ -12,13 +12,16 @@ export function GET() {
 
 > ${site.positioning} Based in ${site.location}. This file describes the public site. It is not a biography beyond what the pages say.
 
-Ryan Editraj is 16, as stated on his X bio, and is based in ${site.location}. He is founder of MoneyRadar and of Thugir Group, the parent of MoneyRadar and Thugir Labs. Thugir Labs (https://thugirlabs.com) describes itself as autonomous security research for pentesters, security teams, and MSPs, in a free closed beta.
+Ryan Editraj is 16, as stated on his X bio, and is based in ${site.location}. He builds security and AI products and explains them so someone outside the field can use them. He is founder of MoneyRadar and of Thugir Group, the parent of MoneyRadar and Thugir Labs.
 
-He states, and this file does not independently verify, that at 14 he found a CVSS 9.8 vulnerability, that a patent is pending, that one build was 138,936 lines of code, and that he placed first at a Liya Tech hackathon.
-
-Email: ${site.email}
+Instagram: https://www.instagram.com/ryaneditraj/ (@ryaneditraj). No follower count is stated in this file.
 X: https://x.com/ryaneditraj
 LinkedIn: https://linkedin.com/in/ryaneditraj
+Contact form: ${origin}/contact
+
+Build: ${origin}/build
+Learn: ${origin}/learn
+Start here: ${origin}/learn/start
 
 ## Selected work
 ${work}
@@ -27,7 +30,7 @@ ${work}
 ${origin}/collaborate
 
 ## Not claimed
-This site does not list clients, testimonials, press, or audited statistics unless a page shows a source and a date. Mentorship booking and the newsletter are off until configured. The private portal is not enabled.
+This site does not list clients, testimonials, press, or an Instagram follower count. It does not state a vulnerability finding, a patent, a line count, or a hackathon place. Mentorship booking and the newsletter are off until configured. The private portal is not enabled.
 
 ## Optional
 Canonical origin is SITE_URL when set. In production, with SITE_URL unset, it is https://ryaneditraj.vercel.app. Local development uses http://localhost:3000.

@@ -1,12 +1,13 @@
 import { JsonLd } from "@/components/json-ld";
 import { Shell } from "@/components/shell";
 import { getSite } from "@/lib/content";
+import { bridge } from "@/lib/lanes";
 import { buildMeta, personId } from "@/lib/seo";
 
 export const metadata = buildMeta({
   path: "/about",
   title: "About",
-  description: "Ryan Editraj is 16, in Tamil Nadu, India, and founder of MoneyRadar and Thugir Group.",
+  description: "Ryan Editraj is 16, a creator-founder in India, and the bridge from non-tech to tech.",
 });
 
 export default function AboutPage() {
@@ -24,36 +25,23 @@ export default function AboutPage() {
       <p className="kicker">About</p>
       <h1>Who is Ryan Editraj?</h1>
       <p className="lede">
-        He is 16, based in {site.location}. {site.positioning}
+        He is 16, in {site.location}. {bridge} He builds security and AI products, and he explains them so someone outside the field can use them.
       </p>
       <div className="prose">
         <p>
-          The founder line is his. <a href="https://moneyradar.in/about/ryan-editraj">moneyradar.in/about/ryan-editraj</a> calls him founder of MoneyRadar and Thugir Group. The same page calls Thugir Group the parent of MoneyRadar and Thugir Labs. His X bio and LinkedIn headline call him founder and CEO of Thugir Labs. No company registration was found, so this site does not add one.
+          <a href="https://moneyradar.in/about/ryan-editraj">His MoneyRadar page</a> calls him founder of MoneyRadar and Thugir Group, and calls Thugir Group the parent of MoneyRadar and Thugir Labs. X and LinkedIn call him founder and CEO of Thugir Labs. No company registration was found.
         </p>
         <p>
-          <a href="https://thugirlabs.com">thugirlabs.com</a>, checked 23 October 2026, describes Thugir Labs as autonomous security research for pentesters, security teams, and MSPs. It is a free closed beta, and the contact on the site is sales@thugirlabs.com. An older X bio described network security monitoring for law firms and healthcare. That is not the line on the current site.
+          Instagram is <a href="https://www.instagram.com/ryaneditraj/">@ryaneditraj</a>. The bio there presents a creator who documents building. LinkedIn and X present a security founder. This site holds both: the products are under Build, the explanation is under Learn.
         </p>
         <p>
-          MoneyRadar publishes free finance calculators and guides for India and says they are not SEBI advice. His author page quotes him: “Security researcher turned product builder — obsessed with systems that quietly cheat people.”
-        </p>
-        <h2>What he says, in his words</h2>
-        <p>
-          On LinkedIn he writes: “I started in cybersecurity at 12. At 14, I found a CVSS 9.8 critical vulnerability on OLX.in.” He was not in the 2026 entries of the OLX Hall of Fame page when that page was checked. Earlier years were not checked. There is no report id here, and no description of the bug.
+          The closest essay to that bridge is on Medium, 2 June 2026. He writes that technology should explain itself, and that the job is to reduce complexity.
         </p>
         <p>
-          X and LinkedIn both say a patent is pending. No application number or title was found.
+          He took part in the Liya Tech inaugural hackathon on 11 July 2026. The event is corroborated by the organizer and by other participants. A finishing place is not stated here.
         </p>
         <p>
-          On 30 May 2026 he posted that a Thugir Labs build was 138,936 lines of code, built alone, at 16, and that he was launching it on Product Hunt. The post is his. The Product Hunt launch was not found.
-        </p>
-        <p>
-          On 13 July 2026 he posted that he placed first at his first hackathon, hosted by Liya Tech. No independent write-up was found, so it is not on the press page.
-        </p>
-        <p>
-          Age 16 is what his X bio says, and what the 30 May 2026 post says (“At 16”). It is his statement. It is shown because he asked for it on this site.
-        </p>
-        <p>
-          Email: <a href={`mailto:${site.email}`}>{site.email}</a>. Times on this site use {site.timezone}. Location is {site.location}. A finer address is not printed. A school name that appears on some profiles is omitted.
+          Age 16 is what his X bio says. A finer address is not printed. Reach him through <a href="/contact">the form</a>.
         </p>
       </div>
     </Shell>

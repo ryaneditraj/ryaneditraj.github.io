@@ -48,7 +48,7 @@ const site = getSite();
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
   title: { default: site.name, template: `%s — ${site.name}` },
-  description: `${site.name}, 16, in Tamil Nadu, India. ${site.positioning}`,
+  description: `${site.name} is 16. He builds security and AI products, and he explains tech so anyone can use it. ${site.positioning}`,
   applicationName: site.name,
   authors: [{ name: site.name }],
   creator: site.name,

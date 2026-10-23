@@ -5,6 +5,9 @@ export const directoryGroups: { title: string; links: DirectoryLink[] }[] = [
     title: "Start",
     links: [
       { href: "/", label: "Home", purpose: "Who Ryan is, in one screen." },
+      { href: "/build", label: "Build", purpose: "The products, in plain English, with links." },
+      { href: "/learn", label: "Learn", purpose: "Instagram, the essay, and the demo." },
+      { href: "/learn/start", label: "Start here", purpose: "A short path for someone new to tech." },
       { href: "/about", label: "About", purpose: "The longer account, with sources." },
       { href: "/now", label: "Now", purpose: "What the public record says he is doing." },
       { href: "/journey", label: "Journey", purpose: "Dated facts only." },

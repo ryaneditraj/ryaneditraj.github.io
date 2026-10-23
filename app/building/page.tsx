@@ -42,7 +42,7 @@ export default function BuildingPage() {
           <a href="https://moneyradar.in">moneyradar.in</a> returned HTTP 200 on 23 October 2026. The title was “MoneyRadar — Gen Z Money Decisions for India.” His <a href="https://moneyradar.in/about/ryan-editraj">author page</a> calls him founder of MoneyRadar and Thugir Group. The path /indiquant on that host returned 404 the same day.
         </p>
         <p className="measure">
-          <a href="https://www.thugirlabs.com">thugirlabs.com</a> returned HTTP 200. Thugir Labs is autonomous security research for pentesters, security teams, and MSPs, in a free closed beta. Thugir Group is the parent. The site lists sales@thugirlabs.com.
+          <a href="https://www.thugirlabs.com">thugirlabs.com</a> and <a href="https://thugir.com">thugir.com</a> both served Thugir Labs on 23 October 2026. It is a closed beta titled autonomous security research. His X and LinkedIn bios describe another audience. This page does not pick one. The site lists sales@thugirlabs.com.
         </p>
       </section>
     </Shell>
