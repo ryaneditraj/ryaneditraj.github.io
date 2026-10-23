@@ -1,0 +1,62 @@
+{
+  "name": "Ryan Editraj",
+  "positioning": "The bridge from non-tech to tech.",
+  "location": "India",
+  "timezone": "Asia/Kolkata",
+  "email": "ryaneditraj@gmail.com",
+  "instagram": {
+    "handle": "@ryaneditraj",
+    "url": "https://instagram.com/ryaneditraj",
+    "followersLabel": "about 295,000",
+    "source": "GitHub profile README (github.com/ryaneditraj/ryaneditraj), self-reported. Approximate.",
+    "asOf": "2026-10-23"
+  },
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://instagram.com/ryaneditraj",
+      "note": "Public creator account named in the GitHub profile README."
+    },
+    {
+      "label": "GitHub",
+      "href": "https://github.com/ryaneditraj",
+      "note": "Code and the profile README."
+    },
+    {
+      "label": "X",
+      "href": "https://twitter.com/ryaneditraj",
+      "note": "twitter_username on the GitHub user API, fetched 2026-10-23."
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/ryaneditraj/",
+      "note": "Linked from the previous github.io homepage. Confirm it is still the right profile."
+    },
+    {
+      "label": "Email",
+      "href": "mailto:ryaneditraj@gmail.com",
+      "note": "Published in the GitHub profile README on 2026-10-23."
+    }
+  ],
+  "nav": [
+    { "href": "/directory", "label": "Index" },
+    { "href": "/work", "label": "Work" },
+    { "href": "/lab", "label": "Lab" },
+    { "href": "/notes", "label": "Notes" },
+    { "href": "/collaborate", "label": "Collaborate" }
+  ],
+  "budgetRanges": [
+    "Not sure yet",
+    "Under ₹25,000",
+    "₹25,000–₹75,000",
+    "₹75,000–₹2,00,000",
+    "Above ₹2,00,000",
+    "Prefer to say later"
+  ],
+  "timelines": [
+    "This month",
+    "One to three months",
+    "A season",
+    "No fixed date"
+  ]
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "operating-system",
+    "area": "Computer",
+    "item": "Linux",
+    "detail": "The GitHub account bio says “Linux Fanboy.” No distribution is named.",
+    "verified": true,
+    "status": "published"
+  },
+  {
+    "id": "editor",
+    "area": "Editor",
+    "item": "TODO(Ryan)",
+    "detail": "TODO(Ryan): name the editor you actually use.",
+    "verified": false,
+    "status": "published"
+  },
+  {
+    "id": "terminal",
+    "area": "Terminal",
+    "item": "TODO(Ryan)",
+    "detail": "TODO(Ryan): name the terminal and shell.",
+    "verified": false,
+    "status": "published"
+  },
+  {
+    "id": "hardware",
+    "area": "Hardware",
+    "item": "TODO(Ryan)",
+    "detail": "TODO(Ryan): machine, camera, and anything else you want listed. The Keeb repo is a keyboard he designed, not a statement that it is his daily keyboard.",
+    "verified": false,
+    "status": "published"
+  }
+]

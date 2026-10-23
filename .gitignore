@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+.env
+.env.local
+.env.*.local
+data/*.json
+data/*.lock
+playwright-report
+test-results
+blob-report
+tsconfig.tsbuildinfo
+*.log
+.DS_Store

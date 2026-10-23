@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "explanation",
+    "title": "Explanation",
+    "status": "published",
+    "summary": "Make a technical product, paper, or idea legible to people who are not in the field.",
+    "body": "This is the public half of the work: the bridge from non-tech to tech. A team brings the thing they built. Ryan’s job, if he takes it, is to make it understandable without sanding off the part that is actually true.\n\nTODO(Ryan): name the formats you actually sell — a film, a thread, a talk, a landing page — and remove this sentence.",
+    "categories": ["services"],
+    "tags": ["explanation"],
+    "createdAt": "2026-10-23T08:00:00.000Z",
+    "updatedAt": "2026-10-23T08:00:00.000Z",
+    "audience": "Founders and teams who need a non-specialist to understand the work.",
+    "deliverables": "TODO(Ryan): list real deliverables.",
+    "fee": "TODO(Ryan): set a fee, or say that scope is discussed after the inquiry."
+  },
+  {
+    "slug": "building",
+    "title": "Building",
+    "status": "published",
+    "summary": "Applied software collaborations: research tools, education products, and interfaces in front of them.",
+    "body": "The public code is the evidence for this lane: quant research, education software, and small product interfaces. A collaboration starts from the inquiry form, not from a packaged price.\n\nTODO(Ryan): say what you will and will not take on, including security work. Cybersecurity is a light thread in the public repos, not the headline.",
+    "categories": ["services"],
+    "tags": ["engineering"],
+    "createdAt": "2026-10-23T08:00:00.000Z",
+    "updatedAt": "2026-10-23T08:00:00.000Z",
+    "audience": "Teams who want software built with them, not a pitch deck about it.",
+    "deliverables": "TODO(Ryan): list real deliverables.",
+    "fee": "TODO(Ryan): set a fee, or say that scope is discussed after the inquiry."
+  }
+]

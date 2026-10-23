@@ -1,0 +1,50 @@
+[
+  {
+    "id": "github-opens",
+    "date": "2022-04-05",
+    "title": "GitHub account opens",
+    "body": "github.com/ryaneditraj was created. The same day holds Number Guessing Game, Letter Game, and the start of The CLI Restaurant.",
+    "source": "GitHub users API created_at, and repository created_at values, fetched 2026-10-23.",
+    "status": "published"
+  },
+  {
+    "id": "early-flask",
+    "date": "2022-09-03",
+    "title": "Early Flask exercises",
+    "body": "Word Counter is in the public account, described as a three-hour Flask app. Restaurant Flask sits nearby, dated June 2022, with only a one-line description.",
+    "source": "Repository descriptions and the Word Counter README.",
+    "status": "published"
+  },
+  {
+    "id": "old-site",
+    "date": "2023-03-18",
+    "title": "An earlier site is archived",
+    "body": "Old-Portfolio is created to hold a former ryaneditraj.github.io. Its page called Ryan a self-taught web and app developer. That is a 2023 self-description, not the 2026 profile README.",
+    "source": "github.com/ryaneditraj/Old-Portfolio description and README.",
+    "status": "published"
+  },
+  {
+    "id": "hack-club",
+    "date": "2026-06-03",
+    "title": "Hack Club projects",
+    "body": "Space 3D site, the Waffles page, and later in the same month the Keeb keyboard files. The Space repo description says it had been a while since he last programmed, and Hack Club made it happen.",
+    "source": "Repository descriptions for Space-3d-site, waffles-site, and Keeb-Keyboard.",
+    "status": "published"
+  },
+  {
+    "id": "indiquant",
+    "date": "2026-07-25",
+    "title": "Indiquant is published",
+    "body": "The quant research OS for NSE and BSE goes up. The README calls it a Money Radar product by Thugir Group, maintained by Ryan Editraj.",
+    "source": "github.com/ryaneditraj/indiquant created_at and README.",
+    "status": "published"
+  },
+  {
+    "id": "profile-readme",
+    "date": "2026-10-23",
+    "title": "Profile README states the current line",
+    "body": "The profile repository describes Ryan as an AI builder, founder, and engineer from India, and as the Instagram creator @ryaneditraj with about 295,000 followers. The GitHub account bio, still present the same day, still says he is studying at St Joseph’s CBSE School, Manavalakurichi, and calls him a Linux fan. Those two lines disagree about the present. The school line needs Ryan’s confirmation.",
+    "source": "GitHub user bio via the users API, and github.com/ryaneditraj/ryaneditraj README, both fetched 2026-10-23.",
+    "status": "published"
+  }
+]

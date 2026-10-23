@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "working-session",
+    "title": "Working session",
+    "status": "draft",
+    "summary": "TODO(Ryan): confirm whether you offer mentorship, the length, the fee in INR, and the hours in Asia/Kolkata.",
+    "body": "This draft exists so the booking machinery has a shape. It is not published, it is not payable, and the hours below are an example grid.",
+    "categories": ["mentorship"],
+    "tags": ["draft"],
+    "createdAt": "2026-10-23T08:00:00.000Z",
+    "updatedAt": "2026-10-23T08:00:00.000Z",
+    "durationMin": 45,
+    "priceInr": null,
+    "scheduleStatus": "example",
+    "windows": [
+      { "dow": 1, "start": "18:00", "end": "20:00" },
+      { "dow": 2, "start": "18:00", "end": "20:00" },
+      { "dow": 3, "start": "18:00", "end": "20:00" },
+      { "dow": 4, "start": "18:00", "end": "20:00" },
+      { "dow": 5, "start": "18:00", "end": "20:00" }
+    ]
+  }
+]

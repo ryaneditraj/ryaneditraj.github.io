@@ -1,0 +1,13 @@
+[
+  {
+    "slug": "start-a-collaboration",
+    "title": "Start a collaboration",
+    "status": "published",
+    "summary": "The actual path on this site. Not a client case study.",
+    "body": "Use the collaboration form. It asks for a name, an organisation, a way to reply, an objective, the deliverables, a budget band, and a timeline.\n\nThe form is checked on the server. A hidden field is a spam trap. If email delivery is configured, Ryan gets the inquiry through Resend and you see a confirmation that it was sent. If email is not configured, the page says so. It will not pretend the message arrived.\n\nThere is no rush clock and no “only two spots” line. If the fit is wrong, nothing on this site invents a reason to hurry.\n\nTODO(Ryan): add the response time you actually keep.",
+    "categories": ["operate"],
+    "tags": ["collaboration"],
+    "createdAt": "2026-10-23T08:00:00.000Z",
+    "updatedAt": "2026-10-23T08:00:00.000Z"
+  }
+]

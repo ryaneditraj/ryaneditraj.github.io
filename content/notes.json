@@ -1,0 +1,18 @@
+[
+  {
+    "slug": "colophon",
+    "title": "Colophon",
+    "status": "published",
+    "summary": "How this personal internet is put together. This is a site note, not an essay in Ryan’s voice.",
+    "body": "This site is a new build. The previous github.io page was removed from the working tree at Ryan’s request. It remains in git history.\n\nPages share one content directory of JSON files checked by a schema. Drafts stay out of the public site and out of the sitemap. The admin can edit those files only when the server has a writable disk and an admin password.\n\nNothing on the public pages is a client logo, a testimonial, or a follower count unless a source and a date sit next to it. The Instagram number is self-reported and editable.",
+    "categories": ["site"],
+    "tags": ["colophon"],
+    "createdAt": "2026-10-23T08:00:00.000Z",
+    "updatedAt": "2026-10-23T08:00:00.000Z",
+    "byline": "Site colophon, not a personal essay",
+    "seo": {
+      "title": "Colophon",
+      "description": "How Ryan Editraj’s personal internet is structured, and what it refuses to invent."
+    }
+  }
+]
