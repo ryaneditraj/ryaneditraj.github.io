@@ -25,7 +25,7 @@ Open the live pages: [Home](https://ryaneditraj.github.io/) · [Gallery](https:/
 
 ## Features
 
-- Single-page introduction: who Ryan is, what Coducher is, and how to get in touch
+- Single-page introduction: who Ryan is, and what Coducher is
 - Photography gallery with a keyboard-friendly lightbox (zoom, fullscreen, previous, next)
 - Compressed thumbnails in the grid, with the original photo still one click away
 - Responsive layout: desktop nav and an off-canvas menu on small screens
@@ -62,8 +62,7 @@ Then open http://localhost:8080.
 
 - **About** scrolls to the bio on the homepage, and from the gallery it returns to `index.html#about`.
 - **Gallery** opens the photo grid. Click a picture for the full-size file. Escape or the close button leaves the lightbox.
-- **Contact** in the nav uses `mailto:`. The about section also links a public Gmail address.
-- Social icons go to [Instagram](https://www.instagram.com/ryaneditraj), [GitHub](https://github.com/ryaneditraj), [LinkedIn](https://www.linkedin.com/in/ryaneditraj/), and [Twitter](https://twitter.com/ryaneditraj/).
+- Social icons go to [Instagram](https://www.instagram.com/ryaneditraj) and [GitHub](https://github.com/ryaneditraj).
 
 There is no admin panel and no environment to configure. `.env.example` documents that on purpose.
 
@@ -122,7 +121,7 @@ Each tile is a compressed thumbnail. The link target is the original image. `js/
 
 ### Does the site need API keys or a .env file?
 
-No. `.env.example` is a placeholder for a future form or analytics key. Do not commit real secrets. A Google Maps key that used to live in an older homepage is gone from the working tree; see [SECURITY.md](SECURITY.md) if you need to rotate historical credentials.
+No. `.env.example` is a placeholder for a future form or analytics key. Do not commit real secrets. An old Google Maps key existed in a deleted 2024 commit and is not in this tree. See [SECURITY.md](SECURITY.md).
 
 ### Is the project open source?
 
@@ -130,7 +129,7 @@ Yes. The code is [MIT](LICENSE). UIkit and PhotoSwipe are MIT. IBM Plex Mono is 
 
 ### How do I report a security problem?
 
-Email . The disclosure policy is in [SECURITY.md](SECURITY.md). Please don't file a public issue for an unfixed vulnerability.
+Use GitHub private vulnerability reporting on this repository. The disclosure policy is in [SECURITY.md](SECURITY.md). Please don't file a public issue for an unfixed vulnerability.
 
 ### How can I contribute?
 
@@ -152,5 +151,3 @@ Third-party pieces keep their own licenses: UIkit (MIT, header in `css/uikit.css
 
 - GitHub: [github.com/ryaneditraj](https://github.com/ryaneditraj)
 - Instagram: [instagram.com/ryaneditraj](https://instagram.com/ryaneditraj)
-- Portfolio: [ryaneditraj.github.io](https://ryaneditraj.github.io)
-- Email: [](mailto:)

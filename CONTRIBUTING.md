@@ -33,7 +33,7 @@ Bug fixes, accessibility improvements, and docs corrections are welcome. Large r
 
 ## Reporting security issues
 
-Please email  instead of opening a public issue. See [SECURITY.md](SECURITY.md).
+Use GitHub private vulnerability reporting. See [SECURITY.md](SECURITY.md). Do not open a public issue for an unfixed vulnerability.
 
 ## Code of conduct
 
