@@ -8,7 +8,7 @@
  * 3. Style
  */
 
- @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+/* IBM Plex Mono is self-hosted from css/styles.css. No third-party font request. */
 html {
   /* 1 */
   font-family: 'IBM Plex Mono', monospace;

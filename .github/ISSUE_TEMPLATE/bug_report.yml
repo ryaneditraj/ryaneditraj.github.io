@@ -1,0 +1,40 @@
+name: Bug report
+description: Something on the portfolio or gallery is broken.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you expected, and what the page did instead.
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      placeholder: https://ryaneditraj.github.io/gallery.html
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the gallery
+        2. Click the first photo
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and viewport
+      placeholder: Chrome 130, 1440px desktop
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I did not include API keys, passwords, or private personal data.
+          required: true

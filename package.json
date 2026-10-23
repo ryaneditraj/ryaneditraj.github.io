@@ -1,5 +1,17 @@
 {
-  "dependencies": {
-    "photoswipe": "^5.4.4"
+  "name": "ryaneditraj.github.io",
+  "version": "1.0.0",
+  "description": "Personal portfolio and photography gallery of Ryan Editraj, an AI builder and tech creator.",
+  "license": "MIT",
+  "author": "Ryan Editraj (https://github.com/ryaneditraj)",
+  "homepage": "https://ryaneditraj.github.io",
+  "private": false,
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "check": "python3 scripts/check_site.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryaneditraj/ryaneditraj.github.io.git"
   }
 }
