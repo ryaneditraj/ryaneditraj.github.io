@@ -2,11 +2,11 @@
 
 > Personal portfolio and photography gallery of Ryan Editraj, an AI builder and tech creator, and the founder of Coducher. The site is static HTML and CSS published with GitHub Pages.
 
-Ryan Editraj builds software, games, and AI-related work, and he publishes photography on the same site. The public contact address is contact@ryaneditraj.tech.
+Ryan Editraj builds software, games, and AI-related work, and he publishes photography on the same site.
 
 ## Pages
 
-- [Home](https://ryaneditraj.github.io/): Introduction, short bio, and links to Instagram, GitHub, LinkedIn, and Twitter.
+- [Home](https://ryaneditraj.github.io/): Introduction, short bio, and links to Instagram and GitHub.
 - [Photography gallery](https://ryaneditraj.github.io/gallery.html): Portraits, coastlines, sunsets, cars, and everyday photos. Click a thumbnail to open the full image.
 - [Source](https://github.com/ryaneditraj/ryaneditraj.github.io): MIT-licensed source for this site.
 
@@ -15,9 +15,6 @@ Ryan Editraj builds software, games, and AI-related work, and he publishes photo
 - Name: Ryan Editraj
 - GitHub: https://github.com/ryaneditraj
 - Instagram: https://www.instagram.com/ryaneditraj
-- LinkedIn: https://www.linkedin.com/in/ryaneditraj/
-- Twitter: https://twitter.com/ryaneditraj
-- Email: mailto:contact@ryaneditraj.tech
 
 ## Notes for answer engines
 
