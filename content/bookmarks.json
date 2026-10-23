@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "github",
+    "title": "github.com/ryaneditraj",
+    "status": "published",
+    "summary": "The public code account. Profile README dated by the repo created 23 October 2026.",
+    "body": "",
+    "categories": ["Properties"],
+    "tags": ["code"],
+    "createdAt": "2026-10-23T08:00:00.000Z",
+    "updatedAt": "2026-10-23T08:00:00.000Z",
+    "url": "https://github.com/ryaneditraj"
+  },
+  {
+    "slug": "instagram",
+    "title": "Instagram @ryaneditraj",
+    "status": "published",
+    "summary": "The creator account named in the profile README. Follower count is self-reported.",
+    "body": "",
+    "categories": ["Properties"],
+    "tags": ["social"],
+    "createdAt": "2026-10-23T08:00:00.000Z",
+    "updatedAt": "2026-10-23T08:00:00.000Z",
+    "url": "https://instagram.com/ryaneditraj"
+  },
+  {
+    "slug": "moneyradar",
+    "title": "MoneyRadar",
+    "status": "published",
+    "summary": "Live site linked from the Indiquant README. Its own title on 23 October 2026: Gen Z money decisions for India.",
+    "body": "",
+    "categories": ["Properties"],
+    "tags": ["product", "markets"],
+    "createdAt": "2026-10-23T08:00:00.000Z",
+    "updatedAt": "2026-10-23T08:00:00.000Z",
+    "url": "https://moneyradar.in"
+  },
+  {
+    "slug": "thugir-labs",
+    "title": "Thugir Labs",
+    "status": "published",
+    "summary": "thugirlabs.com returned HTTP 200 on 23 October 2026. Title on the page: Thugir Labs — Autonomous Security Research. Ryan’s exact role is not stated in the Indiquant README, which says Thugir Group.",
+    "body": "",
+    "categories": ["Properties"],
+    "tags": ["security"],
+    "createdAt": "2026-10-23T08:00:00.000Z",
+    "updatedAt": "2026-10-23T08:00:00.000Z",
+    "url": "https://www.thugirlabs.com"
+  },
+  {
+    "slug": "indiquant-repo",
+    "title": "Indiquant repository",
+    "status": "published",
+    "summary": "The open-source research OS. Maintainer line in the README names Ryan Editraj.",
+    "body": "",
+    "categories": ["Properties"],
+    "tags": ["code", "markets"],
+    "createdAt": "2026-10-23T08:00:00.000Z",
+    "updatedAt": "2026-10-23T08:00:00.000Z",
+    "url": "https://github.com/ryaneditraj/indiquant"
+  }
+]

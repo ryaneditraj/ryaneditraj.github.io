@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>C — Cinematic chapters</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@360;500&display=swap" rel="stylesheet" />
+<style>
+  :root { --night:#16130f; --cream:#f3ead7; --brass:#b08958; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--night); color:var(--cream); font-family:Outfit, sans-serif; }
+  .bar { display:flex; justify-content:space-between; padding:18px 28px; font-size:12px; letter-spacing:0.18em; text-transform:uppercase; color:var(--brass); }
+  .bar a { color:var(--cream); text-decoration:none; margin-left:18px; }
+  .chapter { min-height:100vh; padding:8vh 8vw 10vh; display:flex; flex-direction:column; justify-content:flex-end; border-bottom:1px solid rgba(243,234,215,0.2); }
+  .eyebrow { letter-spacing:0.22em; text-transform:uppercase; font-size:12px; color:var(--brass); }
+  h1 { font-family:"Cormorant Garamond", Georgia, serif; font-weight:500; font-size:clamp(56px, 9vw, 120px); line-height:0.86; margin:18px 0; max-width:10ch; }
+  h1 em { font-style:italic; font-weight:500; }
+  p { max-width:36ch; font-size:18px; line-height:1.45; color:#e6dcc8; }
+  .frame { margin-top:36px; border:1px solid rgba(243,234,215,0.45); height:28vh; display:flex; align-items:flex-end; padding:12px 14px; font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:var(--brass); }
+  .next { margin-top:28px; color:var(--cream); letter-spacing:0.14em; text-transform:uppercase; font-size:12px; }
+</style>
+</head>
+<body>
+  <div class="bar"><span>Ryan Editraj — A personal picture</span><nav><a href="#">Ch.01</a><a href="#">Ch.02</a><a href="#">Ch.03</a></nav></div>
+  <section class="chapter">
+    <div class="eyebrow">Chapter 01 — Who</div>
+    <h1>A bridge, <em>not a funnel.</em></h1>
+    <p>Ryan Editraj, in India, builds applied AI and explains it to people who did not arrive through a computer science degree.</p>
+    <div class="frame">Plate 01 — Portrait withheld. No stock photograph.</div>
+    <div class="next">Continue to the work →</div>
+  </section>
+</body>
+</html>
