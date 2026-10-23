@@ -28,13 +28,11 @@ Perplexity-User is documented by Perplexity as generally ignoring `robots.txt`. 
 
 ## Measured SEO score
 
-Lighthouse 12.8.2, against `next start` on 23 October 2026, scored SEO **91** on `/`, `/links`, and `/collaborate`. The only failing SEO audit was `meta-description`: “Document does not have a meta description.”
+Lighthouse 12.8.2 against `next start`, 23 October 2026, after the fix below: SEO **100** on `/`, `/links`, and `/collaborate`. Performance was 95, 97, and 95. Accessibility and best practices were 100. The full table is in `docs/HANDOFF.md`.
 
-The description was in the HTML response. It was not inside the initial `<head>`. `components/shell.tsx` called `headers()` to mark the current nav item, which forced every page to render dynamically, and Next.js streamed the metadata into the body for a later client hoist. Lighthouse did not count it.
+An earlier run the same day scored SEO 91 on those three pages. The only failing audit was `meta-description`. The description was in the HTML response and not inside the initial `<head>`. The shell called `headers()` to mark the current nav item, which forced every page to render dynamically, and Next.js streamed the metadata into the body. Lighthouse did not count it.
 
-That call was removed. The current path now comes from `usePathname()` in `components/site-nav.tsx`. Pages that do not read `searchParams` can render statically, with the description in `<head>`. Routes that read `searchParams` (`/open-source`, `/bookmarks`, `/mentorship/book`, and the admin screens) still render dynamically, so their metadata can still stream. Admin and the portal are `noindex`.
-
-The 91 was measured on the build **before** this change. A remeasure is recorded in `docs/HANDOFF.md` if it was run after the change. Do not treat 91 as the score of the final tree unless the handoff says the remeasure was not done.
+That call is gone. The current path comes from `usePathname()` in `components/site-nav.tsx`. Pages that do not read `searchParams` are static, and the description is in `<head>`. Routes that read `searchParams` (`/open-source`, `/bookmarks`, `/mentorship/book`, and the admin screens) still render dynamically, so their metadata can still stream. Admin and the portal are `noindex`. Those dynamic routes were not part of the Lighthouse sample.
 
 ## Indexing checklist
 
