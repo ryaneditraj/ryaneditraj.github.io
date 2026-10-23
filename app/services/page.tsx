@@ -15,7 +15,7 @@ export default function ServicesPage() {
     <Shell section="Services">
       <p className="kicker">Services</p>
       <h1>What a collaboration can be</h1>
-      <p className="lede">Two lanes, both without a price. A number appears here only after Ryan writes it into the content file.</p>
+      <p className="lede">What the public record supports. A price appears here only after it is written into the content file.</p>
       {services.map((service, index) => (
         <section className="section" key={service.slug}>
           <p className="kicker">0{index + 1}</p>

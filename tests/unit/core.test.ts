@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import { recordFromForm } from "@/lib/admin-form";
 import { generateSlots, isBlocking, overlaps, slotIsFree, type Booking } from "@/lib/bookings";
 import { readCollection } from "@/lib/content";
@@ -9,6 +9,7 @@ import { validateInquiry } from "@/lib/inquiry";
 import { verifyRazorpaySignature, verifyStripeSignature } from "@/lib/payments";
 import { rateLimit, resetRateLimit } from "@/lib/rate-limit";
 import { createSessionToken, verifySessionToken } from "@/lib/session-token";
+import { getSiteUrl } from "@/lib/site-url";
 import { createHmac } from "node:crypto";
 
 const options = { budgets: ["Not sure yet"], timelines: ["No fixed date"] };
@@ -113,6 +114,22 @@ describe("session", () => {
     expect(await verifySessionToken(token, "secret", 1_000)).toBe(true);
     expect(await verifySessionToken(token, "other", 1_000)).toBe(false);
     expect(await verifySessionToken(`${token}x`, "secret", 1_000)).toBe(false);
+  });
+});
+
+describe("site url", () => {
+  it("prefers SITE_URL, then the production origin, then localhost", () => {
+    try {
+      vi.stubEnv("NODE_ENV", "production");
+      vi.stubEnv("SITE_URL", "https://example.com/");
+      expect(getSiteUrl()).toBe("https://example.com");
+      vi.stubEnv("SITE_URL", "");
+      expect(getSiteUrl()).toBe("https://ryaneditraj.vercel.app");
+      vi.stubEnv("NODE_ENV", "test");
+      expect(getSiteUrl()).toBe("http://localhost:3000");
+    } finally {
+      vi.unstubAllEnvs();
+    }
   });
 });
 

@@ -6,7 +6,7 @@ Do not deploy this from the pull request. Nothing here has been deployed.
 
 The old site was static HTML on GitHub Pages. That host cannot run server actions, signed session cookies, or payment webhooks.
 
-Use a Node host. Vercel is the straightforward one: connect the repository, set the environment variables below, and set `SITE_URL` to the origin you actually serve (no trailing slash). Do not set `output: "export"`. A static export would drop the forms and the admin.
+Use a Node host. Vercel is the straightforward one: connect the repository and set the environment variables below. `SITE_URL` overrides the origin. If you leave it unset on a production build, canonicals use `https://ryaneditraj.vercel.app`. Set `SITE_URL` when the public origin is different. Do not set `output: "export"`. A static export would drop the forms and the admin.
 
 GitHub Pages can keep serving the previous commit if you want the old site to stay up while this is reviewed. This branch deletes those files. Merging it to the branch Pages builds from will replace the old site with a Next app Pages cannot run. Point Pages at a different branch, or turn Pages off, before merging.
 
@@ -18,7 +18,7 @@ Every variable is listed in `.env.example`. Secrets stay in the host’s env, ne
 
 | Concern | Required variables | If unset |
 | --- | --- | --- |
-| Canonical origin | `SITE_URL` | Metadata uses `http://localhost:3000` |
+| Canonical origin | `SITE_URL` | Production uses `https://ryaneditraj.vercel.app`. Local dev uses `http://localhost:3000`. |
 | Admin sign-in | `SESSION_SECRET`, `ADMIN_PASSWORD` | Login page says it is not configured |
 | Admin writes | `CONTENT_WRITABLE=true` and a writable disk | Saves are refused |
 | Inquiry email | `RESEND_API_KEY`, `RESEND_FROM`, `COLLAB_TO_EMAIL` | The form says nothing was sent |

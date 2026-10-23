@@ -12,22 +12,10 @@
     "url": "https://github.com/ryaneditraj"
   },
   {
-    "slug": "instagram",
-    "title": "Instagram @ryaneditraj",
-    "status": "published",
-    "summary": "The creator account named in the profile README. Follower count is self-reported.",
-    "body": "",
-    "categories": ["Properties"],
-    "tags": ["social"],
-    "createdAt": "2026-10-23T08:00:00.000Z",
-    "updatedAt": "2026-10-23T08:00:00.000Z",
-    "url": "https://instagram.com/ryaneditraj"
-  },
-  {
     "slug": "moneyradar",
     "title": "MoneyRadar",
     "status": "published",
-    "summary": "Live site linked from the Indiquant README. Its own title on 23 October 2026: Gen Z money decisions for India.",
+    "summary": "Live site. Title on 23 October 2026: MoneyRadar — Gen Z Money Decisions for India. His author page calls him founder of MoneyRadar and Thugir Group, and says the tools are not SEBI advice.",
     "body": "",
     "categories": ["Properties"],
     "tags": ["product", "markets"],
@@ -39,7 +27,7 @@
     "slug": "thugir-labs",
     "title": "Thugir Labs",
     "status": "published",
-    "summary": "thugirlabs.com returned HTTP 200 on 23 October 2026. Title on the page: Thugir Labs — Autonomous Security Research. Ryan’s exact role is not stated in the Indiquant README, which says Thugir Group.",
+    "summary": "Live site, checked 23 October 2026. Autonomous security research for pentesters, security teams, and MSPs. Free closed beta. Thugir Group is the parent. Contact on the site: sales@thugirlabs.com.",
     "body": "",
     "categories": ["Properties"],
     "tags": ["security"],
@@ -58,5 +46,41 @@
     "createdAt": "2026-10-23T08:00:00.000Z",
     "updatedAt": "2026-10-23T08:00:00.000Z",
     "url": "https://github.com/ryaneditraj/indiquant"
+  },
+  {
+    "slug": "moneyradar-author",
+    "title": "MoneyRadar author page",
+    "status": "published",
+    "summary": "His page on MoneyRadar. It calls him founder of MoneyRadar and Thugir Group, and quotes him as a security researcher turned product builder.",
+    "body": "",
+    "categories": ["Properties"],
+    "tags": ["product"],
+    "createdAt": "2026-10-23T12:00:00.000Z",
+    "updatedAt": "2026-10-23T12:00:00.000Z",
+    "url": "https://moneyradar.in/about/ryan-editraj"
+  },
+  {
+    "slug": "x",
+    "title": "X @ryaneditraj",
+    "status": "published",
+    "summary": "Verified X profile. Bio states founder and CEO of Thugir Labs, and age 16.",
+    "body": "",
+    "categories": ["Properties"],
+    "tags": ["social"],
+    "createdAt": "2026-10-23T12:00:00.000Z",
+    "updatedAt": "2026-10-23T12:00:00.000Z",
+    "url": "https://x.com/ryaneditraj"
+  },
+  {
+    "slug": "linkedin",
+    "title": "LinkedIn",
+    "status": "published",
+    "summary": "Verified profile. Headline calls him founder and CEO of Thugir Labs.",
+    "body": "",
+    "categories": ["Properties"],
+    "tags": ["social"],
+    "createdAt": "2026-10-23T12:00:00.000Z",
+    "updatedAt": "2026-10-23T12:00:00.000Z",
+    "url": "https://linkedin.com/in/ryaneditraj"
   }
 ]

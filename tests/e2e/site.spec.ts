@@ -10,7 +10,7 @@ test.beforeAll(() => {
 
 test("home states who Ryan is and how to collaborate", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("heading", { level: 1, name: "Make the technical thing legible." })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 1, name: "Founder of MoneyRadar and Thugir Group." })).toBeVisible();
   await expect(page.getByRole("heading", { level: 2, name: "Who is Ryan Editraj?" })).toBeVisible();
   await expect(page.getByRole("link", { name: "Start a collaboration" }).first()).toBeVisible();
 });

@@ -28,11 +28,11 @@ One identity, shared content, no second thin copy of a page.
 | `/uses` | Linux verified. Editor, terminal, hardware are blanks |
 | `/playbooks`, `/playbooks/[slug]` | How to use the collaboration form |
 | `/dispatches` | Signup disabled until Resend is configured |
-| `/journey` | Dated public facts, including the school-bio conflict |
-| `/now` | Placeholder quoting the profile README |
+| `/journey` | Dated public facts. School name omitted. Self-claims labeled as his |
+| `/now` | Thugir Labs closed beta, and the founder line |
 | `/press` | Empty |
-| `/media-kit`, `/media-kit/download` | One metric, sourced. Markdown download |
-| `/services` | Two services, no fees |
+| `/media-kit`, `/media-kit/download` | Dated profile counts, plus his statements kept separate |
+| `/services` | Building is published. Fees unset. The explanation lane is archived |
 | `/collaborate` | Inquiry. Validated. Not sent without Resend |
 | `/mentorship`, `/mentorship/book` | Not open. Example slots. Button disabled |
 | `/contact` | Switchboard. Not a second form |
@@ -67,7 +67,7 @@ Helmet detection and KL-ctf stay high-level. No deployment guide, no challenge s
 
 ### SEO
 
-Documented in `docs/seo.md`. `SITE_URL` defaults to `http://localhost:3000`. The production domain is not hardcoded. `ryaneditraj.tech` did not resolve on this date.
+Documented in `docs/seo.md`. `SITE_URL` overrides the origin. A production build with it unset uses `https://ryaneditraj.vercel.app`. Local development uses `http://localhost:3000`. `ryaneditraj.tech` did not resolve on this date.
 
 ## Tests that were run
 
@@ -117,4 +117,4 @@ What was checked in code and by the assertions, not only by looking at pictures:
 
 ## Deploy
 
-`docs/deployment.md` and `docs/seo.md`. Short version: Vercel or another Node host, set `SITE_URL`, do not static-export, do not point GitHub Pages at this app, submit the sitemap only after the origin is real.
+`docs/deployment.md` and `docs/seo.md`. Short version: Vercel or another Node host. `SITE_URL` overrides the origin; a production build with it unset uses `https://ryaneditraj.vercel.app`. Do not static-export, and do not point GitHub Pages at this app.

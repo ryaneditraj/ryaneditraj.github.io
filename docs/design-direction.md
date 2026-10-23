@@ -38,6 +38,8 @@ A hybrid, not a copy of A.
 - The numbered spine and the single stamp-red action from B.
 - C was rejected.
 
+The live headline is the founder line, not the earlier editorial headline in prototype A. Prototype A’s screenshot still shows a follower figure that was not verified and is not on the site.
+
 The production palette is in `app/globals.css`. Radius is 0. There are no shadows, gradients, glass panels, or glow. The square in the spine is a stamp, not a decoration repeated on every card. Work is an index of rows, not a card grid.
 
 ## Tokens

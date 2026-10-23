@@ -1,52 +1,41 @@
 # Needs Ryan’s input
 
-Everything below is a blank, a conflict, or a claim this site refuses to make. Search the repo for `TODO(Ryan)` to find the same notes in the content files. Do not fill these with guesses.
+Resolved from the 23 October 2026 dossier, and from his decisions for this update, are marked done. What is left is still a blank. Search the repo for `TODO(Ryan)`.
 
-Checked against the GitHub users API, public repository pages, and HTTP responses on 23 October 2026.
+Checked sources: X API, LinkedIn, GitHub users API, thugirlabs.com, moneyradar.in, and the public repositories already on this site. Confidence follows the dossier: verified, likely, or his statement.
 
-## Identity
+## Decided
 
-- The GitHub account bio still says: “A casual coder studying in St Joseph's CBSE School, Manavalakurichi. Linux Fanboy.” The profile README created the same day says “AI builder, founder, and engineer from India.” Journey quotes both and asks which is current. The homepage does not lead with the school.
-- “Founder” is his word in that README. It is not attached to a company registration. Role at Thugir Labs and at MoneyRadar is unconfirmed beyond the Indiquant README line “A Money Radar product by Thugir Group. Maintained by Ryan Editraj.”
-- LinkedIn `https://www.linkedin.com/in/ryaneditraj/` appeared on the old github.io homepage. Confirm it is still the right profile.
-- A portrait. None is published here. The old headshots were not migrated.
-- What he is doing this week. `/now` quotes the profile README and then says so. Replace `content/now.json`.
+- Age 16 is shown. It is his statement on the X bio and on the 30 May 2026 LinkedIn post. It is not a checked birth record.
+- School name is omitted everywhere, including this file. A finer address is omitted. The public location is Tamil Nadu, India.
+- Role in use: founder of MoneyRadar and of Thugir Group. Thugir Group is the parent of MoneyRadar and Thugir Labs. Source: moneyradar.in/about/ryan-editraj. X and LinkedIn call him founder and CEO of Thugir Labs. No company registration was found.
+- Thugir Labs, from thugirlabs.com: autonomous security research for pentesters, security teams, and MSPs. Free closed beta. The older X line about law firms and healthcare is not the current site.
+- LinkedIn https://linkedin.com/in/ryaneditraj and X https://x.com/ryaneditraj are on the social list and in JSON-LD `sameAs`.
+- Production canonicals use https://ryaneditraj.vercel.app when `SITE_URL` is unset. `SITE_URL` still overrides that.
 
-## Work that was not listed
+## Shown only as his statements
 
-These names came up in the old site or in conversation and were **not** found as public repositories under `ryaneditraj` on 23 October 2026:
+- At 14 he found a CVSS 9.8 vulnerability. He names OLX.in. He was not in the 2026 OLX Hall of Fame entries that were checked. No report id.
+- A patent is pending. No application number or title.
+- A Thugir Labs build was 138,936 lines of code, built alone, at 16. His 30 May 2026 post. The Product Hunt launch he announced was not found.
+- First place at a hackathon hosted by Liya Tech. His 13 July 2026 post. Not an independent clipping, so `/press` stays empty.
 
-- placement-karo
-- roomgpt
-- Coducher (the old homepage called him founder of Coducher)
+## Still open
 
-If they should appear, send the canonical URL and the one-sentence description.
-
-## Projects that need a correction, not a rewrite
-
-- TuitionOS README says it was built for Trinity Educational Institutions. That institution was not independently verified.
-- `https://tuition-os-eta.vercel.app` returned HTTP 404. `https://moneyradar.in/indiquant` returned HTTP 404. `https://moneyradar.in/` returned 200, titled “MoneyRadar — Gen Z Money Decisions for India.” Do not claim he operates every calculator on that site.
-- `https://thugirlabs.com` returned 200, titled “Thugir Labs — Autonomous Security Research.” The README says “Thugir Group,” not a job title.
-- `ryaneditraj.tech` did not resolve (curl exit 000) on 23 October 2026. The profile README lists `https://ryaneditraj.github.io` as the website. This app should not be forced onto GitHub Pages. See `docs/deployment.md`.
-
-## Offers
-
-- Services have no fees and no real deliverable list. Both published services say `TODO(Ryan)` in `content/services.json`.
-- Mentorship is a draft. Confirm whether it exists, the length, the fee in INR, and the hours in Asia/Kolkata. The weekday 18:00–20:00 window is an example, not a promise.
+- Instagram. The dossier could not verify the account or a follower count. It is not linked, and no follower figure is published.
+- Portrait. The GitHub avatar exists. Whether to use it is still his call. No photo is on the site.
+- Coducher. LinkedIn lists founder, January 2024–March 2026. No public URL. Not on the site.
+- placement-karo and roomgpt. Still not found as public repositories under ryaneditraj.
+- TuitionOS. The README says it was built for an institution. That was not independently verified, and the name is not on the site.
+- `thugir.com` is named on the MoneyRadar author page. Whether it resolves was not confirmed. It is not linked.
+- `ryaneditraj.tech` did not resolve on 23 October 2026. The GitHub blog field still contains it. It is not the canonical origin.
+- Services. The explanation lane is archived. Building is published without a fee or a deliverable list. `TODO(Ryan)` remains on those fields.
+- Mentorship is a draft. Length, fee in INR, and real hours are unset. The weekday 18:00–20:00 window is an example.
 - Response time on inquiries is not stated.
-
-## Shelf
-
-- Press: empty. Do not add a clipping that is not a real URL.
-- Resources: empty.
-- Uses: Linux is the only verified line, and no distribution is named. Editor, terminal, and hardware are blanks. The Keeb repository is a keyboard he designed, not proof it is his daily keyboard.
-- Bookmarks are his public properties, not a reading list. A reading list needs real URLs he chooses.
-- Notes: the only published note is the site colophon, bylined as the site, not as a personal essay.
-
-## Legal and operations
-
-- Privacy and terms describe this software. Have a lawyer review them before relying on them.
-- Choose `SITE_URL` once a host exists.
-- Choose whether collaboration inquiries should be emailed (Resend), stored on disk, or both. Until then, a successful form tells the visitor that nothing was sent and points them at `ryaneditraj@gmail.com`.
-- Dispatches (the letter list) stay off until a Resend segment id exists. Do not paste a list of addresses into the repo.
-- Payments: Razorpay is the preferred India provider. Stripe is the alternative. Both need keys and a webhook secret before any booking can be confirmed.
+- Press, resources, and a reading list are empty.
+- Uses: Linux is the only verified line, and no distribution is named. Editor, terminal, and hardware are blanks. Skills he lists on LinkedIn (Python, Flask, JavaScript, C, SQL, VAPT, OSINT, network security) are self-listed and are not a `/uses` inventory.
+- CS50 and CS50x appear on LinkedIn. No certificate URL was found, so they are not on the site.
+- Privacy and terms still need a lawyer. Retention and governing law are `TODO(Ryan)`.
+- Whether collaboration inquiries should be emailed, stored, or both. Until Resend is set, a successful form says nothing was sent.
+- Dispatches stay off until a Resend segment id exists.
+- Payments still need Razorpay or Stripe keys and a webhook secret.

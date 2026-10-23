@@ -7,9 +7,9 @@ import { getSiteUrl } from "@/lib/site-url";
 
 export const metadata = buildMeta({
   path: "/",
-  title: "Ryan Editraj — Make the technical thing legible",
+  title: "Ryan Editraj — Founder of MoneyRadar and Thugir Group",
   description:
-    "Ryan Editraj is an AI builder in India. He makes technical work understandable for people outside the field, and publishes the software in public.",
+    "Ryan Editraj is 16 and is based in Tamil Nadu, India. He is founder of MoneyRadar and Thugir Group. Thugir Labs is autonomous security research in a closed beta.",
 });
 
 export default function HomePage() {
@@ -38,9 +38,10 @@ export default function HomePage() {
             name: site.name,
             url: origin,
             email: site.email,
-            address: { "@type": "PostalAddress", addressCountry: "IN" },
+            address: { "@type": "PostalAddress", addressRegion: "Tamil Nadu", addressCountry: "IN" },
             description:
-              "AI builder and engineer from India who explains technical work to a general audience. Self-description from his GitHub profile README, 23 October 2026.",
+              "Founder of MoneyRadar and Thugir Group. He states that he is 16. Based in Tamil Nadu, India. Checked 23 October 2026.",
+            jobTitle: "Founder",
             sameAs: site.socials.filter((social) => social.href.startsWith("http")).map((social) => social.href),
             homeLocation: { "@type": "Place", name: site.location },
           },
@@ -53,10 +54,10 @@ export default function HomePage() {
           },
         ]}
       />
-      <p className="kicker">India · Asia/Kolkata</p>
-      <h1>Make the technical thing legible.</h1>
+      <p className="kicker">Tamil Nadu, India · Age 16</p>
+      <h1>Founder of MoneyRadar and Thugir Group.</h1>
       <p className="lede">
-        {site.name} builds applied AI in public and explains it to people who do not live in the field. {site.positioning}
+        {site.name} is 16. {site.positioning} Thugir Labs is autonomous security research for pentesters, security teams, and MSPs, in a free closed beta.
       </p>
       <p>
         <a className="stamp" href="/collaborate">
@@ -67,10 +68,10 @@ export default function HomePage() {
         <section>
           <h2>Who is Ryan Editraj?</h2>
           <p className="measure">
-            He describes himself, in the GitHub profile README published on 23 October 2026, as an AI builder, founder, and engineer from India. The same note says he explains that work to a general audience as the Instagram creator {site.instagram.handle}.
+            MoneyRadar and Thugir Labs name him founder. Thugir Group is the parent of both. No company registration was found, so the title is the one on his own sites and profiles, checked 23 October 2026.
           </p>
           <p className="measure">
-            The code is the checkable part: quant research for Indian markets, education software, a computer-vision experiment, and earlier Hack Club builds. Follower counts and titles that are not sourced are not printed here.
+            He states that at 14 he found a CVSS 9.8 vulnerability, that a patent is pending, that one Thugir Labs build was 138,936 lines of code, and that he placed first at a Liya Tech hackathon. Those are his statements. This page does not add a report id, a patent number, or a second source.
           </p>
         </section>
         <aside>
@@ -85,12 +86,10 @@ export default function HomePage() {
               <dd>{site.timezone}</dd>
             </div>
             <div>
-              <dt>Instagram</dt>
+              <dt>Age</dt>
               <dd>
-                <a href={site.instagram.url}>{site.instagram.handle}</a>
-                <div className="meta">
-                  {site.instagram.followersLabel}, self-reported, {site.instagram.asOf}
-                </div>
+                16
+                <div className="meta">Stated on his X bio, checked 23 October 2026.</div>
               </dd>
             </div>
             <div>
@@ -120,7 +119,7 @@ export default function HomePage() {
       </section>
       <section className="section">
         <h2>Now</h2>
-        <p className="todo measure">{now.text}</p>
+        <p className="measure">{now.text}</p>
         <p className="meta">{now.source}</p>
       </section>
     </Shell>

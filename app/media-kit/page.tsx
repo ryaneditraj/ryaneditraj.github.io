@@ -5,7 +5,7 @@ import { buildMeta } from "@/lib/seo";
 export const metadata = buildMeta({
   path: "/media-kit",
   title: "Media kit",
-  description: "Facts about Ryan Editraj for producers. Every number has a source and a date.",
+  description: "Facts about Ryan Editraj for producers. Counts have a source and a date. His other claims are marked as his.",
 });
 
 export default function MediaKitPage() {
@@ -15,7 +15,7 @@ export default function MediaKitPage() {
     <Shell section="Media kit">
       <p className="kicker">Media kit</p>
       <h1>Facts a producer can check</h1>
-      <p className="lede">No engagement rate, no brand list, no audience cities. Those were not verified. The download is the same text as a Markdown file.</p>
+      <p className="lede">Profile counts below are snapshots with a date. A patent, a vulnerability, a line count, and a hackathon place are his statements, not audited results.</p>
       <p>
         <a className="stamp" href="/media-kit/download">
           Download the kit
@@ -23,11 +23,13 @@ export default function MediaKitPage() {
       </p>
       <section className="section">
         <h2>Positioning</h2>
-        <p className="measure">{site.positioning} He builds applied AI and explains it to people outside the field.</p>
-        <p className="meta">Source: GitHub profile README, 2026-10-23, plus the brief he gave for this site.</p>
+        <p className="measure">
+          {site.name} is 16 and is based in {site.location}. {site.positioning} Thugir Labs is autonomous security research for pentesters, security teams, and MSPs, in a free closed beta.
+        </p>
+        <p className="meta">Sources: X bio, moneyradar.in/about/ryan-editraj, thugirlabs.com. Checked 23 October 2026.</p>
       </section>
       <section className="section">
-        <h2>Metrics</h2>
+        <h2>Profile counts</h2>
         <table className="index">
           <thead>
             <tr>
@@ -53,17 +55,40 @@ export default function MediaKitPage() {
         </table>
       </section>
       <section className="section">
+        <h2>His statements</h2>
+        <dl className="facts">
+          <div>
+            <dt>At 14</dt>
+            <dd>He says he found a CVSS 9.8 vulnerability. No report id is published here.</dd>
+          </div>
+          <div>
+            <dt>Patent</dt>
+            <dd>He says one is pending. No application number was found.</dd>
+          </div>
+          <div>
+            <dt>Line count</dt>
+            <dd>He wrote that a Thugir Labs build was 138,936 lines, built alone, at 16.</dd>
+          </div>
+          <div>
+            <dt>Hackathon</dt>
+            <dd>He posted that he placed first at a Liya Tech hackathon, his first.</dd>
+          </div>
+        </dl>
+        <p className="meta">LinkedIn About, X bio, and his posts of 30 May 2026 and 13 July 2026.</p>
+      </section>
+      <section className="section">
         <h2>Boilerplate</h2>
         <p className="measure">
-          {site.name} is an AI builder and engineer in {site.location}. He publishes software in public and explains technical ideas for a general audience as {site.instagram.handle}.
+          {site.name} is 16 and lives in {site.location}. He is founder of MoneyRadar and of Thugir Group, the parent of MoneyRadar and Thugir Labs. Thugir Labs is a free closed beta for autonomous security research, aimed at pentesters, security teams, and MSPs.
         </p>
-        <p className="todo">TODO(Ryan): replace the boilerplate if you want a shorter or longer one. Add a portrait only when you supply the file. This kit does not use a stock photo.</p>
+        <p className="todo">TODO(Ryan): add a portrait only when you supply the file. This kit does not use a stock photo.</p>
       </section>
       <section className="section">
         <h2>Contact</h2>
         <p>
           <a href={`mailto:${site.email}`}>{site.email}</a>
         </p>
+        <p className="meta">Thugir Labs lists sales@thugirlabs.com on its site.</p>
       </section>
     </Shell>
   );

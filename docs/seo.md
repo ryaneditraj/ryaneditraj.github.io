@@ -1,6 +1,6 @@
 # SEO and answer engines
 
-The HTML is rendered on the server. Titles and descriptions are unique per route (`lib/seo.ts`). The canonical URL is `SITE_URL` plus the path. Open Graph and Twitter cards use the same copy and a generated image (`app/opengraph-image.tsx`, re-exported as the Twitter image). `lang` is `en` on `<html>`. Unknown paths return 404. `/gallery` and `/gallery.html` redirect 308 to `/`.
+The HTML is rendered on the server. Titles and descriptions are unique per route (`lib/seo.ts`). The canonical URL is the site origin plus the path. `SITE_URL` sets that origin. When it is unset, production uses `https://ryaneditraj.vercel.app` and local development uses `http://localhost:3000`. Open Graph and Twitter cards use the same copy and a generated image (`app/opengraph-image.tsx`, re-exported as the Twitter image). `lang` is `en` on `<html>`. Unknown paths return 404. `/gallery` and `/gallery.html` redirect 308 to `/`.
 
 JSON-LD is only what the page shows: `Person` and `WebSite` with stable `@id` values (`{origin}/#person`, `{origin}/#website`), `ProfilePage` on the home page, `BreadcrumbList` where the breadcrumb is visible, `Article` on notes (the colophon’s byline is the site, not Ryan), and `CreativeWork` on project pages. No review, rating, or offer markup is emitted, because those facts are not on the page.
 

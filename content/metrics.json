@@ -1,10 +1,28 @@
 [
   {
-    "id": "instagram-followers",
-    "label": "Instagram followers",
-    "value": "about 295,000",
-    "note": "Approximate, self-reported. Not an audited count. Edit this value in content/metrics.json or in admin.",
-    "source": "GitHub profile README (github.com/ryaneditraj/ryaneditraj), fetched 2026-10-23.",
+    "id": "x-followers",
+    "label": "X followers",
+    "value": "22",
+    "note": "A profile count from the X API. Not an audience estimate, and not the same thing as reach.",
+    "source": "X API profile for https://x.com/ryaneditraj, checked 23 October 2026.",
+    "asOf": "2026-10-23",
+    "status": "published"
+  },
+  {
+    "id": "linkedin-followers",
+    "label": "LinkedIn followers",
+    "value": "1,816",
+    "note": "A search snapshot of the profile, plus 500 connections in the same snapshot. Not an export from LinkedIn.",
+    "source": "LinkedIn profile https://linkedin.com/in/ryaneditraj, search snapshot 23 October 2026.",
+    "asOf": "2026-10-23",
+    "status": "published"
+  },
+  {
+    "id": "github-followers",
+    "label": "GitHub followers",
+    "value": "7",
+    "note": "Public followers on the user API. 46 public repositories on the same response.",
+    "source": "GitHub users API for ryaneditraj, fetched 23 October 2026.",
     "asOf": "2026-10-23",
     "status": "published"
   }
