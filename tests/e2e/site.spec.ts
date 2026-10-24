@@ -10,10 +10,11 @@ test.beforeAll(() => {
 
 test("home states who Ryan is and how to collaborate", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("heading", { level: 1, name: "I build security and AI products, and I explain tech so anyone can use it." })).toBeVisible();
-  await expect(page.getByRole("heading", { level: 2, name: "Who is Ryan Editraj?" })).toBeVisible();
-  await expect(page.getByRole("link", { name: "See what he builds" })).toBeVisible();
-  await expect(page.getByRole("link", { name: "@ryaneditraj" }).first()).toBeVisible();
+  await expect(page.getByRole("heading", { level: 1, name: "I build. I explain. So tech feels possible." })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 2, name: "Why I build" })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 2, name: "Come learn with me" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Follow @ryaneditraj" })).toBeVisible();
+  await expect(page.getByRole("img", { name: "Black and white portrait of Ryan Editraj." })).toBeVisible();
 });
 
 test("unknown routes and the old gallery", async ({ page }) => {

@@ -2,7 +2,7 @@
 
 Updated 23 October 2026 from dossier v2. The public site uses verified facts and the positioning in section 7 of that dossier. Search the repo for `TODO(Ryan)`.
 
-School, village, and street stay off every page, including this one. Age 16 is shown because he asked for it. It is the age in his X bio.
+School, village, and street stay off every page, including this one. Age 16 is shown because he asked for it. It is the age in his X bio. The public place is Tamil Nadu, India. “About 12” is the likely start from the Ryan-techie listing, not a diary.
 
 ## On the site
 
@@ -18,7 +18,7 @@ School, village, and street stay off every page, including this one. Age 16 is s
 - Instagram followers. A third-party viewer (imginn) showed a count on 23 October 2026. Instagram itself needs a login, so the number is not on the site. Confirm it, or leave it off. Same for the “30M+ views” line in that indexed bio, and for which reels should lead `/learn/start`.
 - Thugir Labs audience. The live site is a closed beta titled autonomous security research. X and LinkedIn still say network security for law and healthcare. Which audience is current?
 - Placement Karo pricing. The live page shows a free check, a paid report, and a monthly plan. That does not match an unverified story about college partnerships and staffing. Which model is real, and is the product officially yours? The Vercel team name is the link used on the site.
-- Portrait. None is published.
+- Portrait. The homepage uses the GitHub avatar (github.com/ryaneditraj.png), pushed to high-contrast black and white, saved at `public/ryan.jpg`. TODO(Ryan): drop a higher-resolution photo at that same path if you want it sharper. The page will pick it up. No other photo was found.
 - Coducher. LinkedIn lists founder, January 2024–March 2026. No URL. Not on the site.
 - Whether Trinity One is a client project, and what the 19 October 2026 “JEV” EdTech teaser on X refers to.
 - Thugir users or customers, a Product Hunt link, and whether any line count may be shown. The count is not on the site.

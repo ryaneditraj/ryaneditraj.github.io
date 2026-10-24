@@ -25,23 +25,23 @@ export default function AboutPage() {
       <p className="kicker">About</p>
       <h1>Who is Ryan Editraj?</h1>
       <p className="lede">
-        He is 16, in {site.location}. {bridge} He builds security and AI products, and he explains them so someone outside the field can use them.
+        I am 16, in {site.location}. {bridge} I have been coding since about 12. I build security and AI products, and I explain them so they feel possible.
       </p>
       <div className="prose">
         <p>
-          <a href="https://moneyradar.in/about/ryan-editraj">His MoneyRadar page</a> calls him founder of MoneyRadar and Thugir Group, and calls Thugir Group the parent of MoneyRadar and Thugir Labs. X and LinkedIn call him founder and CEO of Thugir Labs. No company registration was found.
+          <a href="https://moneyradar.in/about/ryan-editraj">My MoneyRadar page</a> calls me founder of MoneyRadar and Thugir Group, and calls Thugir Group the parent of MoneyRadar and Thugir Labs. X and LinkedIn call me founder and CEO of Thugir Labs. No company registration was found.
         </p>
         <p>
-          Instagram is <a href="https://www.instagram.com/ryaneditraj/">@ryaneditraj</a>. The bio there presents a creator who documents building. LinkedIn and X present a security founder. This site holds both: the products are under Build, the explanation is under Learn.
+          Instagram is <a href="https://www.instagram.com/ryaneditraj/">@ryaneditraj</a>. There I document the building. On LinkedIn and X I am the security founder. This site holds both.
         </p>
         <p>
-          The closest essay to that bridge is on Medium, 2 June 2026. He writes that technology should explain itself, and that the job is to reduce complexity.
+          On 2 June 2026 I wrote that technology should explain itself, and that the job is to reduce complexity.
         </p>
         <p>
-          He took part in the Liya Tech inaugural hackathon on 11 July 2026. The event is corroborated by the organizer and by other participants. A finishing place is not stated here.
+          I took part in the Liya Tech inaugural hackathon on 11 July 2026. The event is corroborated by the organizer and by other participants. A finishing place is not stated here.
         </p>
         <p>
-          Age 16 is what his X bio says. A finer address is not printed. Reach him through <a href="/contact">the form</a>.
+          Age 16 is what my X bio says. A finer address is not printed. Reach me through <a href="/contact">the form</a>.
         </p>
       </div>
     </Shell>

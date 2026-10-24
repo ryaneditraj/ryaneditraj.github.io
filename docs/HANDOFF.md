@@ -88,7 +88,7 @@ Lighthouse 12.8.2, Playwright Chromium (`chromium-1248`), production `next start
 
 | Page | Performance | Accessibility | Best practices | SEO | FCP | LCP | TBT | CLS | Speed index | TTI |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `/` | 94 | 100 | 100 | 100 | 1.4 s | 2.9 s | 90 ms | 0 | 1.4 s | 3.0 s |
+| `/` | 92 | 100 | 100 | 100 | 1.4 s | 3.2 s | 110 ms | 0 | 1.4 s | 3.2 s |
 | `/build` | 94 | 100 | 100 | 100 | 1.4 s | 2.9 s | 100 ms | 0 | 1.4 s | 3.0 s |
 | `/learn` | 96 | 100 | 100 | 100 | 1.4 s | 2.6 s | 90 ms | 0 | 1.4 s | 3.0 s |
 

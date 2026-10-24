@@ -1,16 +1,18 @@
 import { JsonLd } from "@/components/json-ld";
-import { LaneTable } from "@/components/lane-table";
+import { PortraitStage } from "@/components/portrait-stage";
 import { Shell } from "@/components/shell";
 import { getNow, getSite } from "@/lib/content";
-import { bridge, buildRows, hero, learnRows, proofRows } from "@/lib/lanes";
+import { bridge, buildRows, learnRows, mission, proofRows } from "@/lib/lanes";
 import { personId, websiteId, buildMeta } from "@/lib/seo";
 import { getSiteUrl } from "@/lib/site-url";
+
+const nowLine = "Thugir Labs, closed beta  ·  MoneyRadar, live  ·  Explaining the work on Instagram";
 
 export const metadata = buildMeta({
   path: "/",
   title: "Ryan Editraj — The bridge from non-tech to tech",
   description:
-    "Ryan Editraj is 16. He builds security and AI products, and he explains tech so anyone can use it. Based in India.",
+    "I am 16, in Tamil Nadu, India. I build security and AI products, and I explain tech so it feels possible for people who think it is not for them.",
 });
 
 export default function HomePage() {
@@ -18,7 +20,7 @@ export default function HomePage() {
   const now = getNow();
   const origin = getSiteUrl();
   return (
-    <Shell section="Home">
+    <Shell section="Home" variant="wild">
       <JsonLd
         data={[
           {
@@ -38,7 +40,7 @@ export default function HomePage() {
             name: site.name,
             url: origin,
             email: site.email,
-            description: `${hero} ${bridge} He states that he is 16. Based in India.`,
+            description: `${mission} ${bridge} He states that he is 16. Based in Tamil Nadu, India.`,
             jobTitle: "Founder",
             sameAs: site.socials.filter((social) => social.href.startsWith("http")).map((social) => social.href),
             homeLocation: { "@type": "Place", name: site.location },
@@ -52,74 +54,116 @@ export default function HomePage() {
           },
         ]}
       />
-      <p className="kicker">India · Age 16</p>
-      <h1 className="h1-poster">{hero}</h1>
-      <p className="lede">{bridge} Founder of Thugir Group. He states that he is 16.</p>
-      <p>
-        <a className="stamp" href="/build">
-          See what he builds
-        </a>{" "}
-        <a className="ghost" href="/learn/start">
-          New to tech
-        </a>
-      </p>
-      <section className="section">
-        <h2>Who is Ryan Editraj?</h2>
+
+      <PortraitStage mission={mission} />
+      <div className="zine-marquee" aria-hidden="true">
+        <div className="zine-marquee-track">
+          <span>{nowLine} · </span>
+          <span>{nowLine} · </span>
+        </div>
+      </div>
+
+      <section className="chapter">
+        <p className="chapter-no">01</p>
+        <h2>Why I build</h2>
+        <div className="why-lines">
+          <p>People hit a wall of jargon.</p>
+          <p>They decide tech is not for them.</p>
+          <p>I refuse that door.</p>
+        </div>
+        <blockquote className="pull">
+          <p>Technology should explain itself… reduce complexity.</p>
+          <footer>What I wrote, 2 June 2026.</footer>
+        </blockquote>
         <p className="measure">
-          A creator-founder in India. He builds security and AI products under Thugir Group, including MoneyRadar and Thugir Labs, and he explains that work in public so someone outside the field can use it. Instagram is{" "}
-          <a href="https://www.instagram.com/ryaneditraj/">@ryaneditraj</a>.
+          {bridge} I build the product. Then I say what it does, in public, in plain words. That is the whole point.
         </p>
-      </section>
-      <section className="section">
-        <h2>What does he build?</h2>
-        <LaneTable rows={buildRows} linkLabel="Open" />
         <p>
-          <a className="ghost" href="/build">
-            The build index
+          <a href="https://medium.com/@ryaneditraj/a-16-year-old-founders-prediction-the-next-cybersecurity-crisis-will-be-powered-by-ai-6cbd75ad947a">
+            Read the essay
           </a>
         </p>
       </section>
-      <section className="section">
-        <h2>Where does he explain it?</h2>
-        <LaneTable rows={learnRows} linkLabel="Open" />
+
+      <section className="chapter">
+        <p className="chapter-no">02</p>
+        <h2>What I am building</h2>
+        <p className="lede">Live, and still in my hands. Each one exists because a real person was stuck.</p>
+        <ol className="builds">
+          {buildRows.map((row) => (
+            <li key={row.name} className="build-row">
+              <div className="build-head">
+                {row.state ? <span className="state">{row.state}</span> : null}
+                <h3>{row.name}</h3>
+              </div>
+              <p>{row.line}</p>
+              {row.note ? <p className="meta">{row.note}</p> : null}
+              <p className="build-links">
+                {row.links.map((link) => (
+                  <a key={link.href} href={link.href}>
+                    {link.label}
+                  </a>
+                ))}
+              </p>
+            </li>
+          ))}
+        </ol>
       </section>
-      <section className="section">
-        <h2>What can you check?</h2>
-        <p className="measure">Verified items only. A claim without a public source is not on this wall.</p>
-        <table className="index">
-          <thead>
-            <tr>
-              <th>Item</th>
-              <th>Check</th>
-              <th>Link</th>
-            </tr>
-          </thead>
-          <tbody>
-            {proofRows.map((row) => (
-              <tr key={row.item}>
-                <td data-label="Item">{row.item}</td>
-                <td data-label="Check">{row.check}</td>
-                <td data-label="Link">
-                  <a href={row.href}>{row.label}</a>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+
+      <section className="chapter">
+        <p className="chapter-no">03</p>
+        <h2>Come learn with me</h2>
+        <p className="lede">The other half of the work. I build it, then I explain it, for people who are not already inside.</p>
+        <ol className="builds">
+          {learnRows.map((row) => (
+            <li key={row.name} className="build-row">
+              <h3>{row.name}</h3>
+              <p>{row.line}</p>
+              <p className="build-links">
+                {row.links.map((link) => (
+                  <a key={link.href} href={link.href}>
+                    {link.label}
+                  </a>
+                ))}
+              </p>
+            </li>
+          ))}
+        </ol>
       </section>
-      <section className="section">
-        <h2>How do you reach him?</h2>
-        <p className="measure">Use the form. This site does not publish a street address.</p>
-        <p>
-          <a className="stamp" href="/contact">
-            Open the contact form
+
+      <section className="chapter">
+        <p className="chapter-no">04</p>
+        <h2>What you can check</h2>
+        <p className="measure">If I cannot point at it, it is not on this wall. Open the link.</p>
+        <ol className="proof">
+          {proofRows.map((row, index) => (
+            <li key={row.item}>
+              <span className="num">{String(index + 1).padStart(2, "0")}</span>
+              <div>
+                <h3>{row.item}</h3>
+                <p>{row.check}</p>
+                <a href={row.href}>{row.label}</a>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section className="cta-band">
+        <p className="kicker">Stay close</p>
+        <h2>If the bridge is what you needed, come through it.</h2>
+        <p>Follow the work. Or write to me. The form is the door. There is no street address.</p>
+        <p className="cta-actions">
+          <a className="stamp" href="https://www.instagram.com/ryaneditraj/">
+            Follow @ryaneditraj
+          </a>
+          <a className="ghost" href="/collaborate">
+            Collaborate
+          </a>
+          <a className="ghost" href="/contact">
+            Contact
           </a>
         </p>
-      </section>
-      <section className="section">
-        <h2>Now</h2>
-        <p className="measure">{now.text}</p>
-        <p className="meta">{now.source}</p>
       </section>
     </Shell>
   );

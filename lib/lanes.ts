@@ -5,16 +5,20 @@ export type LaneRow = {
   line: string;
   links: LaneLink[];
   note?: string;
+  state?: string;
 };
 
-export const hero = "I build security and AI products, and I explain tech so anyone can use it.";
+export const hero = "I build. I explain. So tech feels possible.";
+
+export const mission = "I build security and AI products, and I explain tech so anyone can use it.";
 
 export const bridge = "The bridge from non-tech to tech.";
 
 export const buildRows: LaneRow[] = [
   {
     name: "Thugir Labs",
-    line: "A closed beta for security research. It records a proof of what it finds. The audience is not settled on this site.",
+    state: "Closed beta",
+    line: "Security work is hard to see, and harder to trust. I am building a closed beta that does the research and keeps a proof of what it found, so a person can look at the work. Who it is for is still open.",
     links: [
       { href: "https://thugirlabs.com", label: "thugirlabs.com" },
       { href: "https://thugir.com", label: "thugir.com" },
@@ -23,7 +27,8 @@ export const buildRows: LaneRow[] = [
   },
   {
     name: "MoneyRadar",
-    line: "Calculators and short guides for money decisions in India. Free to use. Not investment advice.",
+    state: "Live",
+    line: "Money talk in India gets loud and technical. MoneyRadar is free calculators and short guides, so someone can make an everyday decision without a lecture. It is not investment advice.",
     links: [
       { href: "https://moneyradar.in", label: "moneyradar.in" },
       { href: "https://moneyradar.in/about/ryan-editraj", label: "Author page" },
@@ -31,7 +36,8 @@ export const buildRows: LaneRow[] = [
   },
   {
     name: "IndiQuant",
-    line: "A research desk for ideas about Indian stocks. You state a hypothesis and test it on past data. It does not place trades.",
+    state: "Public code",
+    line: "A hunch about Indian stocks is not a plan. IndiQuant is where you write the idea, test it on past NSE and BSE data, and keep the record. It does not place a trade.",
     links: [
       { href: "https://github.com/ryaneditraj/indiquant", label: "Repository" },
       { href: "/work/indiquant", label: "Notes" },
@@ -40,7 +46,8 @@ export const buildRows: LaneRow[] = [
   },
   {
     name: "Trinity One",
-    line: "The school day on one screen for a tuition centre: classes, homework, and attendance.",
+    state: "In progress",
+    line: "A tuition centre's day gets lost in chats and paper. Trinity One puts classes, homework, and attendance on one screen, so the day is findable.",
     links: [
       { href: "https://github.com/ryaneditraj/TuitionOS", label: "Repository" },
       { href: "https://tuition-os-eta.vercel.app", label: "Demo listed in the README" },
@@ -49,7 +56,8 @@ export const buildRows: LaneRow[] = [
   },
   {
     name: "KL-ctf",
-    line: "A harness for running a security-challenge exercise. Built for a hackathon. This site does not describe the challenges.",
+    state: "Built",
+    line: "A security competition falls apart if nothing runs the exercise. KL-ctf is the harness I built for one. I do not describe the challenges here.",
     links: [
       { href: "https://github.com/ryaneditraj/KL-ctf", label: "Repository" },
       { href: "/lab/kl-ctf", label: "Notes" },
@@ -57,13 +65,15 @@ export const buildRows: LaneRow[] = [
   },
   {
     name: "Placement Karo",
-    line: "A placement check for students in India.",
+    state: "Live",
+    line: "Students in India are left guessing if they are ready for placement. Placement Karo is a check that shows where they stand. I do not state a price here.",
     links: [{ href: "https://placement-karo.vercel.app", label: "placement-karo.vercel.app" }],
     note: "The site is live. It sits on a Vercel team whose name includes ryaneditraj. That is the link used here, not a signed statement of ownership. Pricing is not repeated.",
   },
   {
     name: "Hack Club builds",
-    line: "Three small builds from Hack Club: a keyboard layout, a program page, and a three-dimensional site.",
+    state: "Built",
+    line: "I had gone quiet on building. Hack Club pulled me back: a keyboard layout, a small page, and a three-dimensional site.",
     links: [
       { href: "https://github.com/ryaneditraj/Keeb-Keyboard", label: "Keeb" },
       { href: "https://github.com/ryaneditraj/waffles-site", label: "Waffles" },
@@ -76,12 +86,12 @@ export const buildRows: LaneRow[] = [
 export const learnRows: LaneRow[] = [
   {
     name: "Instagram",
-    line: "Where he explains tech, startups, and AI for a general audience. The handle is @ryaneditraj. No follower count is printed.",
+    line: "If tech feels like a room you were not invited into, this is where I talk like a person. The handle is @ryaneditraj. I do not print a follower count.",
     links: [{ href: "https://www.instagram.com/ryaneditraj/", label: "@ryaneditraj" }],
   },
   {
     name: "Medium essay",
-    line: "He argues that technology should explain itself, and that the job is to reduce complexity. Published 2 June 2026.",
+    line: "I wrote this for anyone who has been told the field is too complicated. Technology should explain itself. The job is to reduce complexity. 2 June 2026.",
     links: [
       {
         href: "https://medium.com/@ryaneditraj/a-16-year-old-founders-prediction-the-next-cybersecurity-crisis-will-be-powered-by-ai-6cbd75ad947a",
@@ -91,7 +101,7 @@ export const learnRows: LaneRow[] = [
   },
   {
     name: "Thugir demo",
-    line: "A short film of the Thugir Labs product, on the Thugir Labs channel. The title is his: it reasons, it does not only scan.",
+    line: "A film is faster than a spec when you are new to this. This is the Thugir Labs demo. It reasons. It does not only scan.",
     links: [
       { href: "https://www.youtube.com/watch?v=pzrIMsDy0Wg", label: "Watch" },
       { href: "https://www.youtube.com/@thugirlabs", label: "Channel" },
@@ -99,7 +109,7 @@ export const learnRows: LaneRow[] = [
   },
   {
     name: "Start here",
-    line: "A short path for someone who is new to tech: the essay, the demo, then Instagram.",
+    line: "New to tech? Start with the essay, then the film, then Instagram. Three doors. No jargon first.",
     links: [{ href: "/learn/start", label: "Start here" }],
   },
 ];
