@@ -19,7 +19,7 @@ export default function LinksPage() {
   ];
   return (
     <Shell section="Links" variant="links">
-      <p className="kicker">@ryaneditraj</p>
+      <p className="kicker">@ryaneditraj · 300K+ on Instagram</p>
       <h1>Ryan Editraj</h1>
       <p>{site.positioning}</p>
       <nav className="link-stack" aria-label="Links">

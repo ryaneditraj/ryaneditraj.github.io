@@ -5,6 +5,9 @@ export const directoryGroups: { title: string; links: DirectoryLink[] }[] = [
     title: "Start",
     links: [
       { href: "/", label: "Home", purpose: "Who Ryan is, in one screen." },
+      { href: "/build", label: "Build", purpose: "The products, in plain English, with links." },
+      { href: "/learn", label: "Learn", purpose: "Instagram, the essay, and the demo." },
+      { href: "/learn/start", label: "Start here", purpose: "A short path for someone new to tech." },
       { href: "/about", label: "About", purpose: "The longer account, with sources." },
       { href: "/now", label: "Now", purpose: "What the public record says he is doing." },
       { href: "/journey", label: "Journey", purpose: "Dated facts only." },
@@ -35,7 +38,7 @@ export const directoryGroups: { title: string; links: DirectoryLink[] }[] = [
   {
     title: "Work with him",
     links: [
-      { href: "/services", label: "Services", purpose: "What a collaboration can be. Fees are unset." },
+      { href: "/services", label: "Work with me", purpose: "Partnership and collaboration. Not a service menu." },
       { href: "/collaborate", label: "Collaborate", purpose: "The inquiry." },
       { href: "/mentorship", label: "Mentorship", purpose: "Not open." },
       { href: "/mentorship/book", label: "Book", purpose: "The slot screen. It does not confirm a booking." },

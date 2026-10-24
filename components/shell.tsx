@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SiteNav } from "@/components/site-nav";
+import { ZineCursor } from "@/components/zine-cursor";
 import { getSite } from "@/lib/content";
 import { directoryGroups } from "@/lib/directory";
 
@@ -9,13 +10,14 @@ export function Shell({
   children,
 }: {
   section: string;
-  variant?: "default" | "links";
+  variant?: "default" | "links" | "wild";
   children: React.ReactNode;
 }) {
   const site = getSite();
 
   return (
     <div className="shell">
+      {variant === "wild" ? <ZineCursor /> : null}
       <a className="skip" href="#content">
         Skip to content
       </a>
@@ -27,11 +29,11 @@ export function Shell({
           {children}
         </main>
       ) : (
-        <main id="content" className="page">
+        <main id="content" className={variant === "wild" ? "page page-wild" : "page"}>
           <div className="spine">
             <b>■</b>
             <span>{section}</span>
-            <span>India</span>
+            <span>Tamil Nadu</span>
           </div>
           <div>{children}</div>
         </main>
@@ -39,7 +41,7 @@ export function Shell({
       {variant === "links" ? (
         <footer className="footer">
           <p className="colophon">
-            Ryan Editraj · India · <Link href="/directory">Full index</Link>
+            Ryan Editraj · Tamil Nadu · <Link href="/directory">Full index</Link>
           </p>
         </footer>
       ) : (

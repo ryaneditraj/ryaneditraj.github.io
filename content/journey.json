@@ -35,16 +35,56 @@
     "id": "indiquant",
     "date": "2026-07-25",
     "title": "Indiquant is published",
-    "body": "The quant research OS for NSE and BSE goes up. The README calls it a Money Radar product by Thugir Group, maintained by Ryan Editraj.",
+    "body": "The quant research OS for NSE and BSE goes up. The README calls it a Money Radar product by Thugir Group, maintained by Ryan Editraj. His author page on moneyradar.in calls him founder of MoneyRadar and Thugir Group.",
     "source": "github.com/ryaneditraj/indiquant created_at and README.",
     "status": "published"
   },
   {
     "id": "profile-readme",
     "date": "2026-10-23",
-    "title": "Profile README states the current line",
-    "body": "The profile repository describes Ryan as an AI builder, founder, and engineer from India, and as the Instagram creator @ryaneditraj with about 295,000 followers. The GitHub account bio, still present the same day, still says he is studying at St Joseph’s CBSE School, Manavalakurichi, and calls him a Linux fan. Those two lines disagree about the present. The school line needs Ryan’s confirmation.",
-    "source": "GitHub user bio via the users API, and github.com/ryaneditraj/ryaneditraj README, both fetched 2026-10-23.",
+    "title": "Public profiles checked",
+    "body": "X, LinkedIn, GitHub, thugirlabs.com, thugir.com, and moneyradar.in were read on this day. He states that he is 16. The pages here place him in India and leave out any finer address. The GitHub bio calls him a Linux fan. A school name that appears on some profiles is omitted at his request.",
+    "source": "X API, LinkedIn profile, GitHub users API, thugirlabs.com, and moneyradar.in/about/ryan-editraj, checked 23 October 2026.",
+    "status": "published"
+  },
+  {
+    "id": "x-opens",
+    "date": "2022-12-04",
+    "title": "X account opens",
+    "body": "https://x.com/ryaneditraj is created. The bio checked in October 2026 calls him founder and CEO of Thugir Labs and states that he is 16.",
+    "source": "X API profile, checked 23 October 2026.",
+    "status": "published"
+  },
+  {
+    "id": "thugir-labs-founded",
+    "date": "2026-03-01",
+    "title": "Thugir Labs, as dated on LinkedIn",
+    "body": "LinkedIn lists him as founder of Thugir Labs from March 2026. The day above is the month, not a filing date. No company registration was found. Thugir Group is the parent he names for MoneyRadar and Thugir Labs.",
+    "source": "LinkedIn profile https://linkedin.com/in/ryaneditraj, checked 23 October 2026. Parent company: moneyradar.in/about/ryan-editraj.",
+    "status": "published"
+  },
+  {
+    "id": "thugir-launch-post",
+    "date": "2026-05-30",
+    "title": "He posts a Thugir Labs launch note",
+    "body": "He posted a launch note for Thugir Labs. Figures in that post are not repeated here.",
+    "source": "https://www.linkedin.com/posts/ryaneditraj_cybersecurity-ai-startup-activity-7466561603191324672-MdzD",
+    "status": "published"
+  },
+  {
+    "id": "thugir-notes",
+    "date": "2026-06-27",
+    "title": "Thugir Labs publishes research notes",
+    "body": "Research notes go up on thugirlabs.com. This site does not reprint them.",
+    "source": "thugirlabs.com, checked 23 October 2026.",
+    "status": "published"
+  },
+  {
+    "id": "liya-tech-post",
+    "date": "2026-07-13",
+    "title": "He posts about Liya Tech",
+    "body": "The Liya Tech inaugural hackathon was held on 11 July 2026. The organizer and other participants wrote about the event. He posted two days later. This site records that he took part. It does not record a place.",
+    "source": "https://www.linkedin.com/posts/ryaneditraj_hackathon-winner-innovation-activity-7482270388954083330-M31_",
     "status": "published"
   }
 ]

@@ -10,9 +10,14 @@ test.beforeAll(() => {
 
 test("home states who Ryan is and how to collaborate", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("heading", { level: 1, name: "Make the technical thing legible." })).toBeVisible();
-  await expect(page.getByRole("heading", { level: 2, name: "Who is Ryan Editraj?" })).toBeVisible();
-  await expect(page.getByRole("link", { name: "Start a collaboration" }).first()).toBeVisible();
+  await expect(page.getByRole("heading", { level: 1, name: "I build companies. AI first." })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 2, name: "What I build" })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 2, name: "Build with me" })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 2, name: "Content" })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 2, name: "The story" })).toBeVisible();
+  await expect(page.locator(".cta-band").getByRole("link", { name: "Write to me" })).toBeVisible();
+  await expect(page.getByRole("img", { name: "Black and white portrait of Ryan Editraj." })).toBeVisible();
+  await expect(page.getByText("This site was designed and built by me.").first()).toBeVisible();
 });
 
 test("unknown routes and the old gallery", async ({ page }) => {
@@ -71,7 +76,7 @@ test("robots policy and sitemap omit admin", async ({ request }) => {
 
 test("axe on representative pages", async ({ page }) => {
   test.setTimeout(120_000);
-  for (const path of ["/", "/about", "/links", "/work", "/collaborate", "/directory", "/media-kit", "/mentorship/book", "/open-source"]) {
+  for (const path of ["/", "/about", "/build", "/learn", "/learn/start", "/contact", "/work", "/collaborate", "/directory", "/media-kit"]) {
     await page.goto(path);
     const results = await new AxeBuilder({ page }).analyze();
     expect(results.violations, `${path} ${JSON.stringify(results.violations, null, 2)}`).toEqual([]);
@@ -80,7 +85,7 @@ test("axe on representative pages", async ({ page }) => {
 
 test("visual screenshots", async ({ page }) => {
   test.setTimeout(180_000);
-  const representative = ["/", "/links", "/work", "/collaborate", "/directory", "/mentorship/book", "/media-kit", "/about"];
+  const representative = ["/", "/build", "/learn", "/learn/start", "/contact", "/about", "/links", "/work"];
   for (const width of [360, 390, 768, 1280, 1600]) {
     await page.setViewportSize({ width, height: width < 800 ? 844 : 1000 });
     await page.goto("/");

@@ -12,21 +12,33 @@ export function GET() {
 
 > ${site.positioning} Based in ${site.location}. This file describes the public site. It is not a biography beyond what the pages say.
 
-Ryan Editraj publishes applied AI software and explains technical work to a general audience. Instagram ${site.instagram.handle} is self-reported at ${site.instagram.followersLabel} as of ${site.instagram.asOf}. Source: ${site.instagram.source}
+Ryan Editraj is 16, as stated on his X bio, and is based in ${site.location}. He builds companies. AI is the main thing. His own include Thugir Labs and MoneyRadar. He also builds as a technical co-builder with other founders, and he does not name those companies or claim a title at one. He explains the work to people who are not in tech. Instagram is 300K+ followers. No client name is published.
 
-Email: ${site.email}
+Instagram: https://www.instagram.com/ryaneditraj/ (@ryaneditraj, 300K+ followers, confirmed by Ryan on 24 October 2026).
+X: https://x.com/ryaneditraj
+LinkedIn: https://linkedin.com/in/ryaneditraj
+Contact form: ${origin}/contact
+
+Build: ${origin}/build
+Learn: ${origin}/learn
+Start here: ${origin}/learn/start
 
 ## Selected work
 ${work}
 
-## Collaborate
-${origin}/collaborate
+## Work with me
+Partnership and collaboration, not a service menu: ${origin}/services
+
+## Contact
+${origin}/contact
 
 ## Not claimed
-This site does not list clients, testimonials, press, or audited statistics unless a page shows a source and a date. Mentorship booking and the newsletter are off until configured. The private portal is not enabled.
+Thugir Labs is high-end AI security research: an autonomous engine that reasons, instead of only scanning. Closed beta. https://thugir.com and the demo at https://www.youtube.com/watch?v=pzrIMsDy0Wg
+
+This site does not list client names, testimonials, or prices. It does not state a vulnerability finding, a patent, a line count, or a hackathon place. It does not state a vulnerability finding, a patent, a line count, or a hackathon place. Mentorship booking and the newsletter are off until configured. The private portal is not enabled.
 
 ## Optional
-Canonical origin comes from the SITE_URL environment variable.
+Canonical origin is SITE_URL when set. In production, with SITE_URL unset, it is https://ryaneditraj.vercel.app. Local development uses http://localhost:3000.
 `;
   return new Response(body, {
     headers: { "Content-Type": "text/plain; charset=utf-8" },

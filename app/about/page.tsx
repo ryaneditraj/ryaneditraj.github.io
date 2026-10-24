@@ -6,7 +6,7 @@ import { buildMeta, personId } from "@/lib/seo";
 export const metadata = buildMeta({
   path: "/about",
   title: "About",
-  description: "Who Ryan Editraj is, according to the public record he has actually published.",
+  description: "Ryan Editraj is 16, in Tamil Nadu. He builds companies. AI first.",
 });
 
 export default function AboutPage() {
@@ -23,22 +23,25 @@ export default function AboutPage() {
       />
       <p className="kicker">About</p>
       <h1>Who is Ryan Editraj?</h1>
-      <p className="lede">An AI builder in India who explains technical work to people outside the field. The sentence is his, from the GitHub profile README of 23 October 2026.</p>
+      <p className="lede">
+        I am 16, in {site.location}. I build companies. AI is the main thing. Some are mine, including MoneyRadar and Thugir Labs. Some I build with other people, as the technical co-builder. I also explain the work to people who are not in tech. I have been coding since about 12.
+      </p>
       <div className="prose">
+        <h2>Ventures I&apos;ve built</h2>
         <p>
-          The profile README calls him an AI builder, founder, and engineer. “Founder” is his word. This site does not attach it to a company registration. The Indiquant README says that project is a Money Radar product by Thugir Group, maintained by Ryan Editraj. thugirlabs.com was up on the same day, titled “Thugir Labs — Autonomous Security Research.” His exact role there is unconfirmed.
+          <a href="https://moneyradar.in/about/ryan-editraj">My MoneyRadar page</a> calls me founder of MoneyRadar and Thugir Group, and calls Thugir Group the parent of MoneyRadar and Thugir Labs. X and LinkedIn call me founder and CEO of Thugir Labs. No company registration was found. I do not name a co-founder title at a company that is not mine.
         </p>
         <p>
-          The public code matches the lane he describes: markets research (Indiquant, BTC 1% Radar), education software (Trinity One, a CBSE physics concept ranker), a local helmet-detection experiment, and Hack Club projects from 2026. Earlier repos are small Python and Flask exercises from 2022 and 2023.
+          Instagram is <a href="https://www.instagram.com/ryaneditraj/">@ryaneditraj</a>, 300K+ followers, confirmed 24 October 2026. I document the building there.
         </p>
         <p>
-          Instagram {site.instagram.handle} is the creator account. The follower line — {site.instagram.followersLabel} — is approximate and self-reported. Source: {site.instagram.source}
-        </p>
-        <p className="todo">
-          TODO(Ryan): the GitHub account bio still says you are studying at St Joseph’s CBSE School, Manavalakurichi, and calls you a Linux fan. The newer profile README does not mention the school. Say which line is current.
+          On 2 June 2026 I wrote that technology should explain itself, and that the job is to reduce complexity.
         </p>
         <p>
-          Email published on the profile README: <a href={`mailto:${site.email}`}>{site.email}</a>. Location on the same sources: {site.location}. Times on this site use {site.timezone}.
+          I took part in the Liya Tech inaugural hackathon on 11 July 2026. The event is corroborated by the organizer and by other participants. A finishing place is not stated here.
+        </p>
+        <p>
+          Age 16 is what my X bio says. A finer address is not printed. Reach me through <a href="/contact">the form</a>.
         </p>
       </div>
     </Shell>

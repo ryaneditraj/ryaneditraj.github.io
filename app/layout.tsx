@@ -48,7 +48,7 @@ const site = getSite();
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
   title: { default: site.name, template: `%s — ${site.name}` },
-  description: `${site.name} builds applied AI in public and explains it to people outside the field. ${site.positioning}`,
+  description: `${site.name} is 16, in Tamil Nadu, India. ${site.positioning}`,
   applicationName: site.name,
   authors: [{ name: site.name }],
   creator: site.name,

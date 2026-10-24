@@ -33,4 +33,4 @@ End-to-end tests expect a production build and start `next start` on `127.0.0.1:
 - [docs/seo.md](docs/seo.md) — indexing and the crawler policy
 - [docs/portal-architecture.md](docs/portal-architecture.md) — why `/portal` is a refusal page
 
-`SITE_URL` is the only origin the site will advertise. If it is unset, metadata uses `http://localhost:3000`. No production domain is hardcoded.
+`SITE_URL` overrides the origin. If it is unset, production metadata uses `https://ryaneditraj.vercel.app`. Local development uses `http://localhost:3000`.

@@ -2,9 +2,27 @@
   {
     "id": "instagram-followers",
     "label": "Instagram followers",
-    "value": "about 295,000",
-    "note": "Approximate, self-reported. Not an audited count. Edit this value in content/metrics.json or in admin.",
-    "source": "GitHub profile README (github.com/ryaneditraj/ryaneditraj), fetched 2026-10-23.",
+    "value": "300K+",
+    "note": "Ryan confirmed about 328K followers on 24 October 2026. The public figure is 300K+. Handle @ryaneditraj.",
+    "source": "Confirmed by Ryan Editraj, 24 October 2026.",
+    "asOf": "2026-10-24",
+    "status": "published"
+  },
+  {
+    "id": "linkedin-followers",
+    "label": "LinkedIn followers",
+    "value": "1,816",
+    "note": "A count on the profile, checked with the page. Not an export, and not an Instagram figure.",
+    "source": "https://linkedin.com/in/ryaneditraj, checked 23 October 2026.",
+    "asOf": "2026-10-23",
+    "status": "published"
+  },
+  {
+    "id": "github-stars",
+    "label": "GitHub stars, all public repos",
+    "value": "about 9",
+    "note": "Summed from the users repos API. Not a traction claim.",
+    "source": "https://api.github.com/users/ryaneditraj/repos, read 23 October 2026.",
     "asOf": "2026-10-23",
     "status": "published"
   }

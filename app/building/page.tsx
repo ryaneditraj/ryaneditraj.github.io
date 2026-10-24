@@ -39,10 +39,10 @@ export default function BuildingPage() {
       <section className="section">
         <h2>Related public sites</h2>
         <p className="measure">
-          <a href="https://moneyradar.in">moneyradar.in</a> returned HTTP 200 on 23 October 2026. The Indiquant README calls Indiquant a Money Radar product. The path /indiquant on that host returned 404 the same day.
+          <a href="https://moneyradar.in">moneyradar.in</a> returned HTTP 200 on 23 October 2026. The title was “MoneyRadar — Gen Z Money Decisions for India.” His <a href="https://moneyradar.in/about/ryan-editraj">author page</a> calls him founder of MoneyRadar and Thugir Group. The path /indiquant on that host returned 404 the same day.
         </p>
         <p className="measure">
-          <a href="https://www.thugirlabs.com">thugirlabs.com</a> returned HTTP 200, titled “Thugir Labs — Autonomous Security Research.” The README says “Thugir Group,” not a job title. TODO(Ryan): state the role in one sentence.
+          <a href="https://www.thugirlabs.com">thugirlabs.com</a> and <a href="https://thugir.com">thugir.com</a> both served Thugir Labs on 23 October 2026. It is a closed beta titled autonomous security research. His X and LinkedIn bios describe another audience. This page does not pick one. The site lists sales@thugirlabs.com.
         </p>
       </section>
     </Shell>

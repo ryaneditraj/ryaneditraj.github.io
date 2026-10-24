@@ -1,49 +1,41 @@
 {
   "name": "Ryan Editraj",
-  "positioning": "The bridge from non-tech to tech.",
-  "location": "India",
+  "positioning": "I build companies. AI first. Mine, and with other founders. Then I explain it to 300K+ people.",
+  "location": "Tamil Nadu, India",
   "timezone": "Asia/Kolkata",
   "email": "ryaneditraj@gmail.com",
-  "instagram": {
-    "handle": "@ryaneditraj",
-    "url": "https://instagram.com/ryaneditraj",
-    "followersLabel": "about 295,000",
-    "source": "GitHub profile README (github.com/ryaneditraj/ryaneditraj), self-reported. Approximate.",
-    "asOf": "2026-10-23"
-  },
   "socials": [
     {
       "label": "Instagram",
-      "href": "https://instagram.com/ryaneditraj",
-      "note": "Public creator account named in the GitHub profile README."
+      "href": "https://www.instagram.com/ryaneditraj/",
+      "note": "300K+ followers. Confirmed by Ryan on 24 October 2026. Handle @ryaneditraj."
+    },
+    {
+      "label": "X",
+      "href": "https://x.com/ryaneditraj",
+      "note": "X API profile, checked 23 October 2026. Joined 4 December 2022."
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://linkedin.com/in/ryaneditraj",
+      "note": "Profile checked 23 October 2026. It matches the person on X and GitHub."
     },
     {
       "label": "GitHub",
       "href": "https://github.com/ryaneditraj",
-      "note": "Code and the profile README."
-    },
-    {
-      "label": "X",
-      "href": "https://twitter.com/ryaneditraj",
-      "note": "twitter_username on the GitHub user API, fetched 2026-10-23."
-    },
-    {
-      "label": "LinkedIn",
-      "href": "https://www.linkedin.com/in/ryaneditraj/",
-      "note": "Linked from the previous github.io homepage. Confirm it is still the right profile."
+      "note": "Users API, fetched 23 October 2026. Location field: India. 7 followers, 46 public repos."
     },
     {
       "label": "Email",
       "href": "mailto:ryaneditraj@gmail.com",
-      "note": "Published in the GitHub profile README on 2026-10-23."
+      "note": "Published in the GitHub profile README."
     }
   ],
   "nav": [
-    { "href": "/directory", "label": "Index" },
+    { "href": "/services", "label": "Work with me" },
     { "href": "/work", "label": "Work" },
-    { "href": "/lab", "label": "Lab" },
-    { "href": "/notes", "label": "Notes" },
-    { "href": "/collaborate", "label": "Collaborate" }
+    { "href": "/about", "label": "About" },
+    { "href": "/contact", "label": "Write to me" }
   ],
   "budgetRanges": [
     "Not sure yet",

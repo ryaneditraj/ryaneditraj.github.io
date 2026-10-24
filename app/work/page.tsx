@@ -2,11 +2,12 @@ import { ProjectIndex } from "@/components/project-index";
 import { Shell } from "@/components/shell";
 import { published, readCollection } from "@/lib/content";
 import { buildMeta } from "@/lib/seo";
+import Link from "next/link";
 
 export const metadata = buildMeta({
   path: "/work",
   title: "Work",
-  description: "Selected public projects by Ryan Editraj, each tied to a GitHub repository.",
+  description: "Selected work by Ryan Editraj, led by Thugir Labs and the other products he has shipped.",
 });
 
 export default function WorkPage() {
@@ -15,12 +16,28 @@ export default function WorkPage() {
     <Shell section="Work">
       <p className="kicker">Work</p>
       <h1>Selected work</h1>
-      <p className="lede">The short list. Descriptions come from each repository, not from a pitch. The archive is longer.</p>
+      <p className="lede">Real products. Thugir Labs is the technical centre: high-end AI security research, in closed beta.</p>
+      <section className="section">
+        <h2>Thugir Labs</h2>
+        <p className="measure">
+          An autonomous engine that reasons, instead of only scanning. The film is on the Thugir Labs channel. The product is at thugir.com.
+        </p>
+        <p className="build-links">
+          <a href="https://thugir.com">thugir.com</a>
+          <a href="https://thugirlabs.com">thugirlabs.com</a>
+          <a href="https://www.youtube.com/watch?v=pzrIMsDy0Wg">Watch the demo</a>
+        </p>
+      </section>
+      <h2>Other products</h2>
+      <p className="measure">Public repositories and the sites attached to them.</p>
       <ProjectIndex projects={projects} />
       <p>
-        <a className="ghost" href="/past-projects">
+        <Link className="ghost" href="/past-projects">
           Past projects
-        </a>
+        </Link>{" "}
+        <Link className="stamp" href="/contact">
+          Write to me
+        </Link>
       </p>
     </Shell>
   );

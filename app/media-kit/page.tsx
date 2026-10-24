@@ -5,7 +5,7 @@ import { buildMeta } from "@/lib/seo";
 export const metadata = buildMeta({
   path: "/media-kit",
   title: "Media kit",
-  description: "Facts about Ryan Editraj for producers. Every number has a source and a date.",
+  description: "Facts about Ryan Editraj for producers. Counts have a source and a date. Unverified claims are left out.",
 });
 
 export default function MediaKitPage() {
@@ -15,7 +15,7 @@ export default function MediaKitPage() {
     <Shell section="Media kit">
       <p className="kicker">Media kit</p>
       <h1>Facts a producer can check</h1>
-      <p className="lede">No engagement rate, no brand list, no audience cities. Those were not verified. The download is the same text as a Markdown file.</p>
+      <p className="lede">Profile counts, each with a date. Instagram is 300K+, confirmed by Ryan. No street address.</p>
       <p>
         <a className="stamp" href="/media-kit/download">
           Download the kit
@@ -23,11 +23,13 @@ export default function MediaKitPage() {
       </p>
       <section className="section">
         <h2>Positioning</h2>
-        <p className="measure">{site.positioning} He builds applied AI and explains it to people outside the field.</p>
-        <p className="meta">Source: GitHub profile README, 2026-10-23, plus the brief he gave for this site.</p>
+        <p className="measure">
+          {site.name} is 16 and is based in {site.location}. {site.positioning} Instagram is @ryaneditraj.
+        </p>
+        <p className="meta">Sources: X bio, Instagram handle, moneyradar.in/about/ryan-editraj, Medium essay of 2 June 2026. Checked 23 October 2026.</p>
       </section>
       <section className="section">
-        <h2>Metrics</h2>
+        <h2>Profile counts</h2>
         <table className="index">
           <thead>
             <tr>
@@ -55,15 +57,16 @@ export default function MediaKitPage() {
       <section className="section">
         <h2>Boilerplate</h2>
         <p className="measure">
-          {site.name} is an AI builder and engineer in {site.location}. He publishes software in public and explains technical ideas for a general audience as {site.instagram.handle}.
+          {site.name} is 16 and is based in {site.location}. He builds companies. AI first. Ventures he has built include MoneyRadar and Thugir Labs. He also builds with other founders, and he does not name those companies. Instagram is @ryaneditraj, 300K+ followers. No client list is included.
         </p>
-        <p className="todo">TODO(Ryan): replace the boilerplate if you want a shorter or longer one. Add a portrait only when you supply the file. This kit does not use a stock photo.</p>
+        <p className="meta">The site portrait is a black-and-white crop of a photo Ryan supplied. Location data was removed before it was published.</p>
       </section>
       <section className="section">
         <h2>Contact</h2>
         <p>
-          <a href={`mailto:${site.email}`}>{site.email}</a>
+          <a href="/contact">The form</a>
         </p>
+        <p className="meta">Reply address if mail is unset: {site.email}. Thugir Labs lists sales@thugirlabs.com. No street address.</p>
       </section>
     </Shell>
   );

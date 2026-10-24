@@ -1,24 +1,32 @@
 import { JsonLd } from "@/components/json-ld";
-import { ProjectIndex } from "@/components/project-index";
+import { preload } from "react-dom";
+import { PortraitStage } from "@/components/portrait-stage";
 import { Shell } from "@/components/shell";
-import { getNow, getSite, published, readCollection } from "@/lib/content";
+import Link from "next/link";
+import { getNow, getSite } from "@/lib/content";
+import { buildRows, learnRows, mission } from "@/lib/lanes";
 import { personId, websiteId, buildMeta } from "@/lib/seo";
 import { getSiteUrl } from "@/lib/site-url";
 
+const offerLine = "AI first  ·  I build companies  ·  Thugir Labs  ·  MoneyRadar  ·  300K+ on Instagram";
+
 export const metadata = buildMeta({
   path: "/",
-  title: "Ryan Editraj — Make the technical thing legible",
+  title: "Ryan Editraj — I build companies",
   description:
-    "Ryan Editraj is an AI builder in India. He makes technical work understandable for people outside the field, and publishes the software in public.",
+    "Ryan Editraj builds companies. AI first. His own, including Thugir Labs and MoneyRadar, and as a technical co-builder with other founders. He explains the work to 300K+ people on Instagram. Based in Tamil Nadu, India. Age 16.",
 });
 
 export default function HomePage() {
+  preload("/ryan.avif", { as: "image", type: "image/avif", fetchPriority: "high" });
   const site = getSite();
   const now = getNow();
-  const projects = published(readCollection("projects")).filter((project) => project.featured).slice(0, 6);
   const origin = getSiteUrl();
+  const thugir = buildRows.find((row) => row.name === "Thugir Labs");
+  const ventures = buildRows.filter((row) => row.name !== "Thugir Labs");
+  const content = learnRows.filter((row) => row.name !== "Start here");
   return (
-    <Shell section="Home">
+    <Shell section="Home" variant="wild">
       <JsonLd
         data={[
           {
@@ -38,9 +46,8 @@ export default function HomePage() {
             name: site.name,
             url: origin,
             email: site.email,
-            address: { "@type": "PostalAddress", addressCountry: "IN" },
-            description:
-              "AI builder and engineer from India who explains technical work to a general audience. Self-description from his GitHub profile README, 23 October 2026.",
+            description: `${mission} He states that he is 16. Based in Tamil Nadu, India.`,
+            jobTitle: "Founder",
             sameAs: site.socials.filter((social) => social.href.startsWith("http")).map((social) => social.href),
             homeLocation: { "@type": "Place", name: site.location },
           },
@@ -53,75 +60,149 @@ export default function HomePage() {
           },
         ]}
       />
-      <p className="kicker">India · Asia/Kolkata</p>
-      <h1>Make the technical thing legible.</h1>
-      <p className="lede">
-        {site.name} builds applied AI in public and explains it to people who do not live in the field. {site.positioning}
-      </p>
-      <p>
-        <a className="stamp" href="/collaborate">
-          Start a collaboration
-        </a>
-      </p>
-      <div className="grid-2">
-        <section>
-          <h2>Who is Ryan Editraj?</h2>
-          <p className="measure">
-            He describes himself, in the GitHub profile README published on 23 October 2026, as an AI builder, founder, and engineer from India. The same note says he explains that work to a general audience as the Instagram creator {site.instagram.handle}.
-          </p>
-          <p className="measure">
-            The code is the checkable part: quant research for Indian markets, education software, a computer-vision experiment, and earlier Hack Club builds. Follower counts and titles that are not sourced are not printed here.
-          </p>
-        </section>
-        <aside>
-          <h2>At a glance</h2>
-          <dl className="facts">
-            <div>
-              <dt>Based</dt>
-              <dd>{site.location}</dd>
-            </div>
-            <div>
-              <dt>Timezone</dt>
-              <dd>{site.timezone}</dd>
-            </div>
-            <div>
-              <dt>Instagram</dt>
-              <dd>
-                <a href={site.instagram.url}>{site.instagram.handle}</a>
-                <div className="meta">
-                  {site.instagram.followersLabel}, self-reported, {site.instagram.asOf}
-                </div>
-              </dd>
-            </div>
-            <div>
-              <dt>Email</dt>
-              <dd>
-                <a href={`mailto:${site.email}`}>{site.email}</a>
-              </dd>
-            </div>
-          </dl>
-        </aside>
+
+      <PortraitStage line={mission} />
+      <div className="zine-marquee" aria-hidden="true">
+        <div className="zine-marquee-track">
+          <span>{offerLine} · </span>
+          <span>{offerLine} · </span>
+        </div>
       </div>
-      <section className="section">
-        <h2>What does he build?</h2>
-        <p className="measure">Selected repositories. Each one links to a page with the source of the description.</p>
-        <ProjectIndex projects={projects} />
-      </section>
-      <section className="section">
-        <h2>How do you collaborate?</h2>
+
+      <section className="chapter">
+        <p className="chapter-no">01</p>
+        <h2>What I build</h2>
+        <p className="lede">AI first. Security research is the deep work. Then the products.</p>
         <p className="measure">
-          Write through the inquiry. Say who you are, what should exist at the end, and the budget band. There is no countdown. Mentorship booking is not open.
+          AI is the main thing. I put it inside companies: mine, and the ones I build with other people. I do not name those other companies here.
         </p>
+        {thugir ? (
+          <article className="build-row">
+            <div className="build-head">
+              {thugir.state ? <span className="state">{thugir.state}</span> : null}
+              <h3>{thugir.name}</h3>
+            </div>
+            <p>{thugir.line}</p>
+            <p className="build-links">
+              {thugir.links.map((link) => (
+                <a key={link.href} href={link.href}>
+                  {link.label}
+                </a>
+              ))}
+              <a href="https://www.youtube.com/watch?v=pzrIMsDy0Wg">Watch the demo</a>
+            </p>
+          </article>
+        ) : null}
+        <h3>Products and ventures</h3>
+        <ol className="builds">
+          {ventures.map((row) => (
+            <li key={row.name} className="build-row">
+              <div className="build-head">
+                {row.state ? <span className="state">{row.state}</span> : null}
+                <h3>{row.name}</h3>
+              </div>
+              <p>{row.line}</p>
+              <p className="build-links">
+                {row.links.map((link) =>
+                  link.href.startsWith("/") ? (
+                    <Link key={link.href} href={link.href}>
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <a key={link.href} href={link.href}>
+                      {link.label}
+                    </a>
+                  ),
+                )}
+              </p>
+            </li>
+          ))}
+        </ol>
         <p>
-          <a className="ghost" href="/services">
-            See the services
-          </a>
+          <Link className="ghost" href="/work">
+            All the work
+          </Link>
         </p>
       </section>
-      <section className="section">
-        <h2>Now</h2>
-        <p className="todo measure">{now.text}</p>
-        <p className="meta">{now.source}</p>
+
+      <section className="chapter">
+        <p className="chapter-no">02</p>
+        <h2>Build with me</h2>
+        <p className="lede">A company, a technical partnership, or a collaboration. Not a menu of things I sell.</p>
+        <ol className="steps">
+          <li>
+            <h3>A company of yours</h3>
+            <p>If you are starting one and need a technical co-builder, write. I do not list partners, and I do not claim a title at a company that is not mine.</p>
+          </li>
+          <li>
+            <h3>A partnership</h3>
+            <p>We build the technical side together. There is no rate card on this site.</p>
+          </li>
+          <li>
+            <h3>A collaboration</h3>
+            <p>A piece of work we both want to exist. The form is the door.</p>
+          </li>
+        </ol>
+        <p>
+          <Link className="ghost" href="/services">
+            Work with me
+          </Link>
+        </p>
+      </section>
+
+      <section className="chapter">
+        <p className="chapter-no">03</p>
+        <h2>Content</h2>
+        <p className="lede">The same work, said so someone outside tech can follow it.</p>
+        <ol className="builds">
+          {content.map((row) => (
+            <li key={row.name} className="build-row">
+              <h3>{row.name}</h3>
+              <p>{row.line}</p>
+              <p className="build-links">
+                {row.links.map((link) => (
+                  <a key={link.href} href={link.href}>
+                    {link.label}
+                  </a>
+                ))}
+              </p>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section className="chapter">
+        <p className="chapter-no">04</p>
+        <h2>The story</h2>
+        <div className="why-lines">
+          <p>I am 16.</p>
+          <p>Tamil Nadu, India.</p>
+          <p>Coding since about 12.</p>
+        </div>
+        <p className="meta">About 12 is an old public listing that called me a 12-year-old. It is not a diary.</p>
+        <blockquote className="pull">
+          <p>Technology should explain itself… reduce complexity.</p>
+          <footer>What I wrote, 2 June 2026.</footer>
+        </blockquote>
+        <p className="measure">
+          I build the company, then I say what it does in plain words. 300K+ followers on Instagram,{" "}
+          <a href="https://www.instagram.com/ryaneditraj/">@ryaneditraj</a>. Confirmed 24 October 2026.
+        </p>
+      </section>
+
+      <section className="cta-band">
+        <p className="kicker">The door</p>
+        <h2>Write to me.</h2>
+        <p>A company, a technical partnership, or a collaboration. The form is how it starts.</p>
+        <p className="craft-note">This site was designed and built by me.</p>
+        <p className="cta-actions">
+          <Link className="stamp" href="/contact">
+            Write to me
+          </Link>
+          <Link className="ghost" href="/services">
+            Work with me
+          </Link>
+        </p>
       </section>
     </Shell>
   );

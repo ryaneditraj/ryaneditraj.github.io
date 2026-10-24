@@ -138,13 +138,6 @@ export const siteSchema = z.object({
   location: z.string().min(1),
   timezone: z.string().min(1),
   email: z.string().email(),
-  instagram: z.object({
-    handle: z.string().min(1),
-    url: z.string().url(),
-    followersLabel: z.string().min(1),
-    source: z.string().min(1),
-    asOf: z.string(),
-  }),
   socials: z.array(socialSchema),
   nav: z.array(z.object({ href: z.string().min(1), label: z.string().min(1) })),
   budgetRanges: z.array(z.string().min(1)).min(1),
