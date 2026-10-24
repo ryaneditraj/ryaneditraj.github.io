@@ -1,6 +1,6 @@
 {
   "name": "Ryan Editraj",
-  "positioning": "A technical founder. I build and operate tech for companies.",
+  "positioning": "I build companies. AI first. Mine, and with other founders. Then I explain it to 300K+ people.",
   "location": "Tamil Nadu, India",
   "timezone": "Asia/Kolkata",
   "email": "ryaneditraj@gmail.com",
@@ -32,10 +32,10 @@
     }
   ],
   "nav": [
-    { "href": "/services", "label": "Services" },
+    { "href": "/services", "label": "Work with me" },
     { "href": "/work", "label": "Work" },
     { "href": "/about", "label": "About" },
-    { "href": "/contact", "label": "Start a project" }
+    { "href": "/contact", "label": "Write to me" }
   ],
   "budgetRanges": [
     "Not sure yet",

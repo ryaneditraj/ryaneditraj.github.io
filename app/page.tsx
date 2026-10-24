@@ -2,26 +2,27 @@ import { JsonLd } from "@/components/json-ld";
 import { PortraitStage } from "@/components/portrait-stage";
 import { Shell } from "@/components/shell";
 import Link from "next/link";
-import { getNow, getSite, published, readCollection } from "@/lib/content";
-import { buildRows, mission } from "@/lib/lanes";
+import { getNow, getSite } from "@/lib/content";
+import { buildRows, learnRows, mission } from "@/lib/lanes";
 import { personId, websiteId, buildMeta } from "@/lib/seo";
 import { getSiteUrl } from "@/lib/site-url";
 
-const offerLine = "Web development  ·  Apps  ·  AI and automation  ·  Fractional CTO  ·  Technical operations";
+const offerLine = "AI first  ·  I build companies  ·  Thugir Labs  ·  MoneyRadar  ·  300K+ on Instagram";
 
 export const metadata = buildMeta({
   path: "/",
-  title: "Ryan Editraj — Technical founder",
+  title: "Ryan Editraj — I build companies",
   description:
-    "Ryan Editraj builds and operates tech for companies: web, apps, AI and automation, and fractional CTO work. Based in Tamil Nadu, India. Age 16.",
+    "Ryan Editraj builds companies. AI first. His own, including Thugir Labs and MoneyRadar, and as a technical co-builder with other founders. He explains the work to 300K+ people on Instagram. Based in Tamil Nadu, India. Age 16.",
 });
 
 export default function HomePage() {
   const site = getSite();
   const now = getNow();
   const origin = getSiteUrl();
-  const services = published(readCollection("services"));
+  const thugir = buildRows.find((row) => row.name === "Thugir Labs");
   const ventures = buildRows.filter((row) => row.name !== "Thugir Labs");
+  const content = learnRows.filter((row) => row.name !== "Start here");
   return (
     <Shell section="Home" variant="wild">
       <JsonLd
@@ -44,7 +45,7 @@ export default function HomePage() {
             url: origin,
             email: site.email,
             description: `${mission} He states that he is 16. Based in Tamil Nadu, India.`,
-            jobTitle: "Technical founder",
+            jobTitle: "Founder",
             sameAs: site.socials.filter((social) => social.href.startsWith("http")).map((social) => social.href),
             homeLocation: { "@type": "Place", name: site.location },
           },
@@ -68,64 +69,29 @@ export default function HomePage() {
 
       <section className="chapter">
         <p className="chapter-no">01</p>
-        <h2>Services</h2>
-        <p className="lede">What I sell to companies. A fee is not listed until I publish one.</p>
-        <ol className="builds">
-          {services.map((service) => (
-            <li key={service.slug} className="build-row">
-              <h3>{service.title}</h3>
-              <p>{service.summary}</p>
-            </li>
-          ))}
-        </ol>
-        <p>
-          <Link className="ghost" href="/services">
-            Read the services
-          </Link>
-        </p>
-      </section>
-
-      <section className="chapter">
-        <p className="chapter-no">02</p>
-        <h2>How I work</h2>
-        <ol className="steps">
-          <li>
-            <h3>You write</h3>
-            <p>The form asks what should exist at the end. There is no street address.</p>
-          </li>
-          <li>
-            <h3>We name the scope</h3>
-            <p>I do not publish a price. The ranges on the form are a question, not a quote.</p>
-          </li>
-          <li>
-            <h3>I design and build</h3>
-            <p>Type, motion, and the thing a person uses. This site is the sample.</p>
-          </li>
-          <li>
-            <h3>I can stay</h3>
-            <p>Freelance for the build, or a fractional CTO while the company runs it.</p>
-          </li>
-        </ol>
-      </section>
-
-      <section className="chapter">
-        <p className="chapter-no">03</p>
-        <h2>Thugir Labs</h2>
-        <p className="lede">The technical depth behind the company work. Frontier research, not a side note.</p>
+        <h2>What I build</h2>
+        <p className="lede">AI first. Security research is the deep work. Then the products.</p>
         <p className="measure">
-          High-end AI security research. An autonomous engine that reasons, instead of only scanning. Closed beta.
+          AI is the main thing. I put it inside companies: mine, and the ones I build with other people. I do not name those other companies here.
         </p>
-        <p className="build-links">
-          <a href="https://thugir.com">thugir.com</a>
-          <a href="https://thugirlabs.com">thugirlabs.com</a>
-          <a href="https://www.youtube.com/watch?v=pzrIMsDy0Wg">Watch the demo</a>
-        </p>
-      </section>
-
-      <section className="chapter">
-        <p className="chapter-no">04</p>
-        <h2>Selected work</h2>
-        <p className="measure">Products I have actually shipped or opened. Thugir Labs is the research. These are the rest.</p>
+        {thugir ? (
+          <article className="build-row">
+            <div className="build-head">
+              {thugir.state ? <span className="state">{thugir.state}</span> : null}
+              <h3>{thugir.name}</h3>
+            </div>
+            <p>{thugir.line}</p>
+            <p className="build-links">
+              {thugir.links.map((link) => (
+                <a key={link.href} href={link.href}>
+                  {link.label}
+                </a>
+              ))}
+              <a href="https://www.youtube.com/watch?v=pzrIMsDy0Wg">Watch the demo</a>
+            </p>
+          </article>
+        ) : null}
+        <h3>Products and ventures</h3>
         <ol className="builds">
           {ventures.map((row) => (
             <li key={row.name} className="build-row">
@@ -133,6 +99,63 @@ export default function HomePage() {
                 {row.state ? <span className="state">{row.state}</span> : null}
                 <h3>{row.name}</h3>
               </div>
+              <p>{row.line}</p>
+              <p className="build-links">
+                {row.links.map((link) =>
+                  link.href.startsWith("/") ? (
+                    <Link key={link.href} href={link.href}>
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <a key={link.href} href={link.href}>
+                      {link.label}
+                    </a>
+                  ),
+                )}
+              </p>
+            </li>
+          ))}
+        </ol>
+        <p>
+          <Link className="ghost" href="/work">
+            All the work
+          </Link>
+        </p>
+      </section>
+
+      <section className="chapter">
+        <p className="chapter-no">02</p>
+        <h2>Build with me</h2>
+        <p className="lede">A company, a technical partnership, or a collaboration. Not a menu of things I sell.</p>
+        <ol className="steps">
+          <li>
+            <h3>A company of yours</h3>
+            <p>If you are starting one and need a technical co-builder, write. I do not list partners, and I do not claim a title at a company that is not mine.</p>
+          </li>
+          <li>
+            <h3>A partnership</h3>
+            <p>We build the technical side together. There is no rate card on this site.</p>
+          </li>
+          <li>
+            <h3>A collaboration</h3>
+            <p>A piece of work we both want to exist. The form is the door.</p>
+          </li>
+        </ol>
+        <p>
+          <Link className="ghost" href="/services">
+            Work with me
+          </Link>
+        </p>
+      </section>
+
+      <section className="chapter">
+        <p className="chapter-no">03</p>
+        <h2>Content</h2>
+        <p className="lede">The same work, said so someone outside tech can follow it.</p>
+        <ol className="builds">
+          {content.map((row) => (
+            <li key={row.name} className="build-row">
+              <h3>{row.name}</h3>
               <p>{row.line}</p>
               <p className="build-links">
                 {row.links.map((link) => (
@@ -144,15 +167,10 @@ export default function HomePage() {
             </li>
           ))}
         </ol>
-        <p>
-          <Link className="ghost" href="/work">
-            All selected work
-          </Link>
-        </p>
       </section>
 
       <section className="chapter">
-        <p className="chapter-no">05</p>
+        <p className="chapter-no">04</p>
         <h2>The story</h2>
         <div className="why-lines">
           <p>I am 16.</p>
@@ -165,22 +183,22 @@ export default function HomePage() {
           <footer>What I wrote, 2 June 2026.</footer>
         </blockquote>
         <p className="measure">
-          I build the product, then I say what it does in plain words. 300K+ followers on Instagram,{" "}
+          I build the company, then I say what it does in plain words. 300K+ followers on Instagram,{" "}
           <a href="https://www.instagram.com/ryaneditraj/">@ryaneditraj</a>. Confirmed 24 October 2026.
         </p>
       </section>
 
       <section className="cta-band">
-        <p className="kicker">A project</p>
-        <h2>Start a project.</h2>
-        <p>Tell me what the company needs built or run. The form is the door.</p>
+        <p className="kicker">The door</p>
+        <h2>Write to me.</h2>
+        <p>A company, a technical partnership, or a collaboration. The form is how it starts.</p>
         <p className="craft-note">This site was designed and built by me.</p>
         <p className="cta-actions">
           <Link className="stamp" href="/contact">
-            Start a project
+            Write to me
           </Link>
           <Link className="ghost" href="/services">
-            See the services
+            Work with me
           </Link>
         </p>
       </section>

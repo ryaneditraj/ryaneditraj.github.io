@@ -38,7 +38,7 @@ export const directoryGroups: { title: string; links: DirectoryLink[] }[] = [
   {
     title: "Work with him",
     links: [
-      { href: "/services", label: "Services", purpose: "What a collaboration can be. Fees are unset." },
+      { href: "/services", label: "Work with me", purpose: "Partnership and collaboration. Not a service menu." },
       { href: "/collaborate", label: "Collaborate", purpose: "The inquiry." },
       { href: "/mentorship", label: "Mentorship", purpose: "Not open." },
       { href: "/mentorship/book", label: "Book", purpose: "The slot screen. It does not confirm a booking." },

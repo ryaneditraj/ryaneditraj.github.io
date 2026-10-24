@@ -8,9 +8,10 @@ export type LaneRow = {
   state?: string;
 };
 
-export const hero = "I build. For companies. Web, apps, AI, ops.";
+export const hero = "I build companies. AI first.";
 
-export const mission = "I build and operate tech for companies: web, apps, AI and automation, and technical operations.";
+export const mission =
+  "Mine, and as a technical co-founder for others. Then I explain it to 300K+ people.";
 
 export const bridge = "The bridge from non-tech to tech.";
 

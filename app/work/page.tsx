@@ -36,7 +36,7 @@ export default function WorkPage() {
           Past projects
         </Link>{" "}
         <Link className="stamp" href="/contact">
-          Start a project
+          Write to me
         </Link>
       </p>
     </Shell>

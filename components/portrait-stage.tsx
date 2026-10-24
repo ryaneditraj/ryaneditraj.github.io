@@ -37,14 +37,12 @@ export function PortraitStage({ line }: { line: string }) {
       <p className="tape">16 · Tamil Nadu, India</p>
       <p className="rubber">Since about 12</p>
       <h1>
-        <span className="slab slab-ink">I build.</span>
-        <span className="slab slab-red">For companies.</span>
-        <span className="slab slab-paper">Web, apps, AI, ops.</span>
+        <span className="slab slab-ink">I build</span>
+        <span className="slab slab-red">companies.</span>
+        <span className="slab slab-paper">AI first.</span>
       </h1>
       <p className="studio-card">{line}</p>
-      <p className="stage-note">
-        Technical founder. Freelance, and a fractional CTO when a company wants a partner for the build and the operations. This site was designed and built by me. The portrait file is public/ryan.jpg, ready to swap.
-      </p>
+      <p className="stage-note">This site was designed and built by me.</p>
     </section>
   );
 }

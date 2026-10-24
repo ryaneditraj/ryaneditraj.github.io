@@ -15,7 +15,7 @@ export default function CollaboratePage() {
     <Shell section="Collaborate">
       <p className="kicker">Collaborate</p>
       <h1>Start a collaboration</h1>
-      <p className="lede">One audience: someone with a piece of work that needs building or explaining. Tell the truth about the objective. There is no deadline clock on this page.</p>
+      <p className="lede">A founder who wants a technical co-builder, or a collaboration. Tell the truth about the objective. There is no rate card and no deadline clock on this page.</p>
       <InquiryForm
         budgets={site.budgetRanges}
         timelines={site.timelines}

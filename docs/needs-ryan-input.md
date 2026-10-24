@@ -6,16 +6,16 @@ School, village, and street stay off every page, including this one. Age 16 is s
 
 ## On the site
 
-- He is positioned as a technical founder who builds and operates tech for companies: web, apps, AI and automation, and fractional CTO / technical operations.
-- Thugir Labs is the technical centrepiece: high-end AI security research, an autonomous engine that reasons instead of only scanning, closed beta, with thugir.com and the YouTube demo.
-- Other products sit under selected work. No client names, testimonials, or prices are published.
-- The homepage says this site was designed and built by him. The portrait is still `public/ryan.jpg`.
+- He is positioned as someone who builds companies. AI is the main thing. His own include Thugir Labs and MoneyRadar. He also builds with other founders, and the site does not name those companies or a title at one.
+- Thugir Labs is the technical centrepiece inside “what I build”: high-end AI security research, an autonomous engine that reasons instead of only scanning, closed beta, with thugir.com and the YouTube demo.
+- Other products sit after that. Content is Instagram (300K+), the Medium essay, and the demo. No client names, testimonials, or prices are published.
+- `/services` is “Work with me”: partnership and collaboration, not a service menu. The web, apps, AI-for-hire, and fractional CTO lanes are archived.
+- The homepage says this site was designed and built by him, as a small line. The portrait is still `public/ryan.jpg`.
 - Contact is the form at `/contact`. No street address.
 
 ## TODO(Ryan)
 
-- Fractional CTO. Say how an engagement starts, how long you stay, and what you will not own. No retainer is published.
-- Service deliverables and fees for web, apps, AI and automation, and the fractional seat. The form’s budget ranges are questions, not quotes.
+- Partnership terms, only if you want them public. Do not name a co-founder title or a partner company unless you have confirmed it. The form’s budget ranges are still questions, not quotes.
 - Instagram views. Ryan confirmed about 328K followers on 24 October 2026. The site publishes that as 300K+. The “30M+ views” line in an indexed bio is still unconfirmed, and so are the reels that should lead `/learn/start`.
 - Thugir Labs audience. The live site is a closed beta titled autonomous security research. X and LinkedIn still say network security for law and healthcare. Which audience is current?
 - Placement Karo pricing. The live page shows a free check, a paid report, and a monthly plan. That does not match an unverified story about college partnerships and staffing. Which model is real, and is the product officially yours? The Vercel team name is the link used on the site.
@@ -24,7 +24,7 @@ School, village, and street stay off every page, including this one. Age 16 is s
 - Whether Trinity One is a client project, and what the 19 October 2026 “JEV” EdTech teaser on X refers to.
 - Thugir users or customers, a Product Hunt link, and whether any line count may be shown. The count is not on the site.
 - OLX report id, patent application number and title, and an organizer post that names a hackathon result. Until those exist, the finding, the patent, the line count, and a win are not published. The site says only that he took part in Liya Tech on 11 July 2026.
-- Services fees and deliverables. Mentorship length, fee, and real hours. Inquiry response time.
+- Mentorship length, fee, and real hours. Inquiry response time. There is no public service menu.
 - Press, resources, and a reading list. Still empty.
 - Uses: editor, terminal, hardware, and Linux distribution. Linux is the only verified line, with no distribution named.
 - CS50 and CS50x. No certificate URL, so they are not on the site.

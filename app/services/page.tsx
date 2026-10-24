@@ -1,47 +1,51 @@
 import { Shell } from "@/components/shell";
 import Link from "next/link";
-import { published, readCollection } from "@/lib/content";
-import { Markdown } from "@/lib/markdown";
 import { buildMeta } from "@/lib/seo";
 
 export const metadata = buildMeta({
   path: "/services",
-  title: "Services",
-  description: "Web development, apps, AI and automation, and fractional CTO work. Fees are unset until Ryan publishes them.",
+  title: "Work with me",
+  description:
+    "Ryan Editraj builds companies: his own, and as a technical co-builder with other founders. This page is a partnership, not a service menu.",
 });
 
 export default function ServicesPage() {
-  const services = published(readCollection("services"));
   return (
-    <Shell section="Services">
-      <p className="kicker">Services</p>
-      <h1>What I build for companies</h1>
-      <p className="lede">Web, apps, AI and automation, and a fractional CTO seat. A price appears here only after it is written down. No client is named.</p>
-      {services.map((service, index) => (
-        <section className="section" key={service.slug}>
-          <p className="kicker">0{index + 1}</p>
-          <h2>{service.title}</h2>
-          <p className="lede">{service.summary}</p>
-          <Markdown source={service.body} />
-          <dl className="facts">
-            <div>
-              <dt>Audience</dt>
-              <dd>{service.audience}</dd>
-            </div>
-            <div>
-              <dt>Deliverables</dt>
-              <dd className="todo">{service.deliverables}</dd>
-            </div>
-            <div>
-              <dt>Fee</dt>
-              <dd className="todo">{service.fee}</dd>
-            </div>
-          </dl>
-        </section>
-      ))}
+    <Shell section="Work with me">
+      <p className="kicker">Work with me</p>
+      <h1>Work with me</h1>
+      <p className="lede">
+        I build companies. Mine, and as a technical co-builder with other people. This page is not a list of things I sell.
+      </p>
+      <section className="section">
+        <p className="kicker">01</p>
+        <h2>My companies</h2>
+        <p className="measure">
+          Thugir Labs and MoneyRadar are mine, with other products beside them. AI is the main thing. Thugir Labs is the deep work: high-end AI security research, an autonomous engine that reasons instead of only scanning, in closed beta.
+        </p>
+        <p>
+          <Link className="ghost" href="/work">
+            See the work
+          </Link>
+        </p>
+      </section>
+      <section className="section">
+        <p className="kicker">02</p>
+        <h2>With other founders</h2>
+        <p className="measure">
+          I also build as a technical co-builder. I do not name those companies, and I do not claim a title at one.
+        </p>
+      </section>
+      <section className="section">
+        <p className="kicker">03</p>
+        <h2>How it starts</h2>
+        <p className="measure">
+          Write through the form. Say what the company is, and what the technical work is. There is no rate card.
+        </p>
+      </section>
       <p>
         <Link className="stamp" href="/contact">
-          Start a project
+          Write to me
         </Link>
       </p>
     </Shell>

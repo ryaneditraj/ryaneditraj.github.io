@@ -24,7 +24,7 @@ export default function MediaKitPage() {
       <section className="section">
         <h2>Positioning</h2>
         <p className="measure">
-          {site.name} is 16 and is based in {site.location}. {site.positioning} Web, apps, AI and automation, and fractional CTO work. His own ventures sit below that. Instagram is @ryaneditraj.
+          {site.name} is 16 and is based in {site.location}. {site.positioning} Instagram is @ryaneditraj.
         </p>
         <p className="meta">Sources: X bio, Instagram handle, moneyradar.in/about/ryan-editraj, Medium essay of 2 June 2026. Checked 23 October 2026.</p>
       </section>
@@ -57,7 +57,7 @@ export default function MediaKitPage() {
       <section className="section">
         <h2>Boilerplate</h2>
         <p className="measure">
-          {site.name} is 16 and is based in {site.location}. He is a technical founder who builds and operates tech for companies. Ventures he has built include MoneyRadar and Thugir Labs. Instagram is @ryaneditraj. No client list is included.
+          {site.name} is 16 and is based in {site.location}. He builds companies. AI first. Ventures he has built include MoneyRadar and Thugir Labs. He also builds with other founders, and he does not name those companies. Instagram is @ryaneditraj, 300K+ followers. No client list is included.
         </p>
         <p className="todo">TODO(Ryan): the site portrait is public/ryan.jpg, from the GitHub avatar. Replace that file if you want a different photo.</p>
       </section>

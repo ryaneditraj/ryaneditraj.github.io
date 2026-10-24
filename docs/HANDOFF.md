@@ -14,7 +14,7 @@ One identity, shared content, no second thin copy of a page.
 
 | Path | Role |
 | --- | --- |
-| `/` | Who he is, what he builds, how to collaborate, now |
+| `/` | Who he is, what he builds, how to build with him, content, story |
 | `/about` | Longer account, with sources |
 | `/links` | Phone bio. Short list, light footer |
 | `/work`, `/work/[slug]` | Featured projects |
@@ -33,7 +33,7 @@ One identity, shared content, no second thin copy of a page.
 | `/now` | Building in public, and posting again on X |
 | `/press` | Empty |
 | `/media-kit`, `/media-kit/download` | Dated profile counts, plus his statements kept separate |
-| `/services` | Building is published. Fees unset. The explanation lane is archived |
+| `/services` | Work with me. Partnership, not a service menu. Hire lanes are archived |
 | `/collaborate` | Inquiry. Validated. Not sent without Resend |
 | `/mentorship`, `/mentorship/book` | Not open. Example slots. Button disabled |
 | `/contact` | Switchboard. Not a second form |
@@ -88,11 +88,13 @@ Lighthouse 12.8.2, Playwright Chromium (`chromium-1248`), production `next start
 
 | Page | Performance | Accessibility | Best practices | SEO | FCP | LCP | TBT | CLS | Speed index | TTI |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `/` | 92 | 100 | 100 | 100 | 1.4 s | 3.2 s | 110 ms | 0 | 1.4 s | 3.2 s |
+| `/` | 93 | 100 | 100 | 100 | 1.4 s | 3.1 s | 50 ms | 0 | 1.4 s | 3.1 s |
 | `/build` | 94 | 100 | 100 | 100 | 1.4 s | 2.9 s | 100 ms | 0 | 1.4 s | 3.0 s |
 | `/learn` | 96 | 100 | 100 | 100 | 1.4 s | 2.6 s | 90 ms | 0 | 1.4 s | 3.0 s |
 
-An earlier run on the same day, before that change, scored SEO 91 on all three pages. The only failing audit was `meta-description`. The tag was in the response but streamed outside `<head>`, because the shell called `headers()`. No other SEO audit failed in that run. JSON for the remeasure was written to `/tmp/lh/{home,links,collaborate}.json` on the build machine and is not in git.
+`/` was measured again on 24 October 2026 after the company-builder rewrite. The other two rows are the 23 October run. First-load JavaScript on `/` in that later build is 113 kB.
+
+An earlier run on 23 October, before the description fix, scored SEO 91 on all three pages. The only failing audit was `meta-description`. The tag was in the response but streamed outside `<head>`, because the shell called `headers()`. No other SEO audit failed in that run. JSON for the remeasure was written to `/tmp/lh/{home,links,collaborate}.json` on the build machine and is not in git.
 
 ### Visual QA
 

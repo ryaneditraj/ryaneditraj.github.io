@@ -12,7 +12,7 @@ export function GET() {
 
 > ${site.positioning} Based in ${site.location}. This file describes the public site. It is not a biography beyond what the pages say.
 
-Ryan Editraj is 16, as stated on his X bio, and is based in ${site.location}. He builds and operates tech for companies: web development, apps, AI and automation, and fractional CTO work. His own ventures, including MoneyRadar and Thugir Labs, are listed as his products, not as the service headline. No client name is published.
+Ryan Editraj is 16, as stated on his X bio, and is based in ${site.location}. He builds companies. AI is the main thing. His own include Thugir Labs and MoneyRadar. He also builds as a technical co-builder with other founders, and he does not name those companies or claim a title at one. He explains the work to people who are not in tech. Instagram is 300K+ followers. No client name is published.
 
 Instagram: https://www.instagram.com/ryaneditraj/ (@ryaneditraj, 300K+ followers, confirmed by Ryan on 24 October 2026).
 X: https://x.com/ryaneditraj
@@ -26,8 +26,8 @@ Start here: ${origin}/learn/start
 ## Selected work
 ${work}
 
-## Services
-${origin}/services
+## Work with me
+Partnership and collaboration, not a service menu: ${origin}/services
 
 ## Contact
 ${origin}/contact
