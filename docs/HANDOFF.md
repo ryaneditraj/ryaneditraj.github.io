@@ -88,7 +88,7 @@ Lighthouse 12.8.2, Playwright Chromium (`chromium-1248`), production `next start
 
 | Page | Performance | Accessibility | Best practices | SEO | FCP | LCP | TBT | CLS | Speed index | TTI |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `/` | 93 | 100 | 100 | 100 | 1.4 s | 3.1 s | 50 ms | 0 | 1.4 s | 3.1 s |
+| `/` | 92 | 100 | 100 | 100 | 1.4 s | 3.3 s | 90 ms | 0 | 1.4 s | 3.3 s |
 | `/build` | 94 | 100 | 100 | 100 | 1.4 s | 2.9 s | 100 ms | 0 | 1.4 s | 3.0 s |
 | `/learn` | 96 | 100 | 100 | 100 | 1.4 s | 2.6 s | 90 ms | 0 | 1.4 s | 3.0 s |
 
@@ -114,7 +114,7 @@ What was checked in code and by the assertions, not only by looking at pictures:
 - The links page still ships the shared client navigation. It is visually light. It is not zero JavaScript.
 - Production build, 23 October 2026: first-load JavaScript is 107 kB on `/` and `/links` (103 kB shared). Collaborate is 110 kB (4.06 kB page). Dispatches 108 kB (1.64 kB). Booking 108 kB (1.71 kB). Admin login 108 kB (1.48 kB).
 - `npm audit` reported 10 vulnerabilities in the dependency tree (2 moderate, 6 high, 2 critical). They were not triaged or patched.
-- Services have `TODO(Ryan)` fees. Mentorship is not open. The newsletter is disabled. The portal and community are not launched. There is no portrait.
+- Services have `TODO(Ryan)` fees. Mentorship is not open. The newsletter is disabled. The portal and community are not launched. The portrait is `public/ryan.avif` (with WebP and JPG). Location metadata is not in those files.
 - TuitionOS and the Indiquant deep link returned HTTP 404. MoneyRadar’s homepage and thugirlabs.com returned 200. Roles are unconfirmed. See `docs/needs-ryan-input.md`.
 - The old gallery photographs were not migrated. That was intentional.
 

@@ -15,7 +15,12 @@ export default function NotFound() {
     <Shell section="Missing">
       <div className="lost">
         <div className="lost-frame">
-          <Image src="/ryan.jpg" alt="" fill sizes="28rem" />
+          <picture>
+            <source srcSet="/ryan.avif" type="image/avif" />
+            <source srcSet="/ryan.webp" type="image/webp" />
+            <Image src="/ryan.jpg" alt="" fill unoptimized sizes="28rem" />
+          </picture>
+          <div className="lost-slice" aria-hidden="true" />
           <p className="lost-num">404</p>
         </div>
         <p className="kicker">Missing page</p>

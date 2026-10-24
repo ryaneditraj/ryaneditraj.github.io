@@ -10,7 +10,7 @@ School, village, and street stay off every page, including this one. Age 16 is s
 - Thugir Labs is the technical centrepiece inside “what I build”: high-end AI security research, an autonomous engine that reasons instead of only scanning, closed beta, with thugir.com and the YouTube demo.
 - Other products sit after that. Content is Instagram (300K+), the Medium essay, and the demo. No client names, testimonials, or prices are published.
 - `/services` is “Work with me”: partnership and collaboration, not a service menu. The web, apps, AI-for-hire, and fractional CTO lanes are archived.
-- The homepage says this site was designed and built by him, as a small line. The portrait is still `public/ryan.jpg`.
+- The homepage says this site was designed and built by him, as a small line. The portrait is his photo, cropped to head, shoulders, and torso, in `public/ryan.avif`, `public/ryan.webp`, and `public/ryan.jpg`. Location metadata was stripped.
 - Contact is the form at `/contact`. No street address.
 
 ## TODO(Ryan)
@@ -19,7 +19,7 @@ School, village, and street stay off every page, including this one. Age 16 is s
 - Instagram views. Ryan confirmed about 328K followers on 24 October 2026. The site publishes that as 300K+. The “30M+ views” line in an indexed bio is still unconfirmed, and so are the reels that should lead `/learn/start`.
 - Thugir Labs audience. The live site is a closed beta titled autonomous security research. X and LinkedIn still say network security for law and healthcare. Which audience is current?
 - Placement Karo pricing. The live page shows a free check, a paid report, and a monthly plan. That does not match an unverified story about college partnerships and staffing. Which model is real, and is the product officially yours? The Vercel team name is the link used on the site.
-- Portrait. The homepage uses the GitHub avatar (github.com/ryaneditraj.png), pushed to high-contrast black and white, saved at `public/ryan.jpg`. TODO(Ryan): drop a higher-resolution photo at that same path if you want it sharper. The page will pick it up. No other photo was found.
+- Portrait. Replaced on 24 October 2026 with the photo Ryan supplied. It is cropped, high-contrast black and white, with a JPG plus AVIF and WebP. The 404 page uses the same files. A different crop would mean replacing those three files together.
 - Coducher. LinkedIn lists founder, January 2024–March 2026. No URL. Not on the site.
 - Whether Trinity One is a client project, and what the 19 October 2026 “JEV” EdTech teaser on X refers to.
 - Thugir users or customers, a Product Hunt link, and whether any line count may be shown. The count is not on the site.

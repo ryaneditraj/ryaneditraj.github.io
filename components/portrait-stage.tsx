@@ -21,15 +21,25 @@ export function PortraitStage({ line }: { line: string }) {
       }}
     >
       <div className="stage-shift">
-        <Image
-          className="stage-photo"
-          src="/ryan.jpg"
-          alt="Black and white portrait of Ryan Editraj."
-          fill
-          priority
-          sizes="100vw"
-        />
-        <Image className="stage-ghost" src="/ryan.jpg" alt="" fill sizes="100vw" aria-hidden />
+        <picture>
+          <source srcSet="/ryan.avif" type="image/avif" />
+          <source srcSet="/ryan.webp" type="image/webp" />
+          <Image
+            className="stage-photo"
+            src="/ryan.jpg"
+            alt="Black and white portrait of Ryan Editraj."
+            fill
+            unoptimized
+            loading="eager"
+            fetchPriority="high"
+            sizes="100vw"
+          />
+        </picture>
+        <picture>
+          <source srcSet="/ryan.avif" type="image/avif" />
+          <source srcSet="/ryan.webp" type="image/webp" />
+          <Image className="stage-ghost" src="/ryan.jpg" alt="" fill unoptimized sizes="100vw" aria-hidden />
+        </picture>
         <div className="stage-slice" aria-hidden="true" />
         <div className="stage-dots" aria-hidden="true" />
         <div className="stage-scan" aria-hidden="true" />

@@ -1,4 +1,5 @@
 import { JsonLd } from "@/components/json-ld";
+import { preload } from "react-dom";
 import { PortraitStage } from "@/components/portrait-stage";
 import { Shell } from "@/components/shell";
 import Link from "next/link";
@@ -17,6 +18,7 @@ export const metadata = buildMeta({
 });
 
 export default function HomePage() {
+  preload("/ryan.avif", { as: "image", type: "image/avif", fetchPriority: "high" });
   const site = getSite();
   const now = getNow();
   const origin = getSiteUrl();

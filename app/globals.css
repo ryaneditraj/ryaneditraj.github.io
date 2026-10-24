@@ -664,7 +664,7 @@ button:disabled, input:disabled, select:disabled, textarea:disabled { opacity: 0
 .stage-photo,
 .stage-ghost {
   object-fit: cover;
-  object-position: center 15%;
+  object-position: center 12%;
 }
 .stage-photo {
   filter: grayscale(1) contrast(1.65);
@@ -893,7 +893,16 @@ button:disabled, input:disabled, select:disabled, textarea:disabled { opacity: 0
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 18%;
   filter: grayscale(1) contrast(1.6);
+}
+.lost-slice {
+  position: absolute;
+  inset: 0;
+  background: var(--stamp);
+  mix-blend-mode: multiply;
+  clip-path: polygon(62% 0, 100% 0, 100% 100%, 46% 100%);
+  pointer-events: none;
 }
 .lost-num {
   position: absolute;

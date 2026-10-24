@@ -59,7 +59,7 @@ export default function MediaKitPage() {
         <p className="measure">
           {site.name} is 16 and is based in {site.location}. He builds companies. AI first. Ventures he has built include MoneyRadar and Thugir Labs. He also builds with other founders, and he does not name those companies. Instagram is @ryaneditraj, 300K+ followers. No client list is included.
         </p>
-        <p className="todo">TODO(Ryan): the site portrait is public/ryan.jpg, from the GitHub avatar. Replace that file if you want a different photo.</p>
+        <p className="meta">The site portrait is a black-and-white crop of a photo Ryan supplied. Location data was removed before it was published.</p>
       </section>
       <section className="section">
         <h2>Contact</h2>
