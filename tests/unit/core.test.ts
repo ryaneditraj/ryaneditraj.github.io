@@ -144,9 +144,10 @@ describe("content", () => {
 
   it("keeps the two lanes factual and leaves unverified claims out", () => {
     const text = JSON.stringify({ buildRows, learnRows, proofRows });
-    for (const name of ["Thugir Labs", "MoneyRadar", "IndiQuant", "Trinity One", "KL-ctf", "Placement Karo", "Hack Club"]) {
+    for (const name of ["Thugir Labs", "MoneyRadar", "IndiQuant", "Trinity One", "KL-ctf", "Hack Club"]) {
       expect(text).toContain(name);
     }
+    expect(text).not.toMatch(/placement karo|placement-karo/i);
     expect(text).toContain("@ryaneditraj");
     expect(text).toContain("300K+");
     expect(text).not.toMatch(/CVSS|138,936|patent pending|first place|placed first/i);

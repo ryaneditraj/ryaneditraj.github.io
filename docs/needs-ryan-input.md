@@ -18,7 +18,7 @@ School, village, and street stay off every page, including this one. Age 16 is s
 - Partnership terms, only if you want them public. Do not name a co-founder title or a partner company unless you have confirmed it. The form’s budget ranges are still questions, not quotes.
 - Instagram views. Ryan confirmed about 328K followers on 24 October 2026. The site publishes that as 300K+. The “30M+ views” line in an indexed bio is still unconfirmed, and so are the reels that should lead `/learn/start`.
 - Thugir Labs audience. The live site is a closed beta titled autonomous security research. X and LinkedIn still say network security for law and healthcare. Which audience is current?
-- Placement Karo pricing. The live page shows a free check, a paid report, and a monthly plan. That does not match an unverified story about college partnerships and staffing. Which model is real, and is the product officially yours? The Vercel team name is the link used on the site.
+- Placement Karo is off the public site, by request on 24 October 2026. Do not add it back to pages, routes, or metadata.
 - Portrait. Replaced on 24 October 2026 with the photo Ryan supplied. It is cropped, high-contrast black and white, with a JPG plus AVIF and WebP. The 404 page uses the same files. A different crop would mean replacing those three files together.
 - Coducher. LinkedIn lists founder, January 2024–March 2026. No URL. Not on the site.
 - Whether Trinity One is a client project, and what the 19 October 2026 “JEV” EdTech teaser on X refers to.

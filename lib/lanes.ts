@@ -65,13 +65,6 @@ export const buildRows: LaneRow[] = [
     ],
   },
   {
-    name: "Placement Karo",
-    state: "Live",
-    line: "Students in India are left guessing if they are ready for placement. Placement Karo is a check that shows where they stand. I do not state a price here.",
-    links: [{ href: "https://placement-karo.vercel.app", label: "placement-karo.vercel.app" }],
-    note: "The site is live. It sits on a Vercel team whose name includes ryaneditraj. That is the link used here, not a signed statement of ownership. Pricing is not repeated.",
-  },
-  {
     name: "Hack Club builds",
     state: "Built",
     line: "I had gone quiet on building. Hack Club pulled me back: a keyboard layout, a small page, and a three-dimensional site.",
@@ -133,12 +126,6 @@ export const proofRows: { item: string; check: string; href: string; label: stri
     check: "Repository created 25 July 2026. One star on the API that day. Labelled a MoneyRadar product.",
     href: "https://github.com/ryaneditraj/indiquant",
     label: "Repository",
-  },
-  {
-    item: "Placement Karo is live",
-    check: "The deployment is up, on a Vercel team whose name includes ryaneditraj.",
-    href: "https://placement-karo.vercel.app",
-    label: "Open the site",
   },
   {
     item: "A Thugir demo exists",
