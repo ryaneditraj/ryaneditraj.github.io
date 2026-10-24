@@ -564,7 +564,7 @@ button:disabled, input:disabled, select:disabled, textarea:disabled { opacity: 0
   color: var(--paper);
   padding: var(--space-7) var(--space-5);
 }
-.cta-band .kicker { color: #f0d2b4; }
+.cta-band .kicker, .cta-band .craft-note { color: #f0d2b4; }
 .cta-band h2 { color: var(--paper); max-width: 14ch; font-size: clamp(2.2rem, 5vw, 3.6rem); }
 .cta-band p { max-width: 36ch; }
 .cta-band .ghost { color: var(--paper); border-bottom-color: var(--paper); }
@@ -693,8 +693,8 @@ button:disabled, input:disabled, select:disabled, textarea:disabled { opacity: 0
   opacity: 0.55;
 }
 .stage-scan {
-  background: repeating-linear-gradient(to bottom, transparent 0 3px, rgba(0, 0, 0, 0.35) 3px 4px);
-  animation: scan 0.7s linear infinite;
+  background: repeating-linear-gradient(to bottom, transparent 0 3px, rgba(0, 0, 0, 0.12) 3px 4px);
+  animation: scan 14s linear infinite;
 }
 .stage h1 {
   position: relative;
@@ -733,7 +733,7 @@ button:disabled, input:disabled, select:disabled, textarea:disabled { opacity: 0
 }
 .tape,
 .rubber,
-.terminal,
+.studio-card,
 .stage-note { position: relative; z-index: 2; }
 .tape {
   position: absolute;
@@ -765,19 +765,18 @@ button:disabled, input:disabled, select:disabled, textarea:disabled { opacity: 0
   padding: 0.35rem 0.5rem;
   transform: rotate(7deg);
 }
-.terminal {
+.studio-card {
   width: min(34rem, calc(100% - 1.4rem));
   margin: 0.4rem 0.7rem 0;
   background: var(--ink);
   color: var(--paper);
   border: 1px solid var(--paper);
-  padding: 0.65rem 0.75rem;
-  font-family: var(--mono);
-  font-size: 0.78rem;
-  line-height: 1.45;
+  padding: 0.8rem 0.9rem;
+  font-family: var(--text);
+  font-size: 1rem;
+  line-height: 1.4;
 }
-.terminal p { margin: 0; max-width: none; }
-.terminal span { color: #f0d2b4; }
+.studio-card p { margin: 0; max-width: none; }
 .stage-note {
   margin: 0.55rem 0.7rem 0;
   width: min(40rem, calc(100% - 1.4rem));
@@ -875,7 +874,7 @@ button:disabled, input:disabled, select:disabled, textarea:disabled { opacity: 0
   .tape { top: 1.4rem; left: 1.2rem; }
   .rubber { top: 1.6rem; right: 1.4rem; }
   .stage h1 { position: absolute; left: 3vw; top: 16vh; margin: 0; }
-  .terminal { position: absolute; left: 3vw; bottom: 1.3rem; margin: 0; width: min(34rem, 46vw); }
+  .studio-card { position: absolute; left: 3vw; bottom: 1.3rem; margin: 0; width: min(34rem, 46vw); }
   .stage-note { position: absolute; right: 3vw; bottom: 1.3rem; margin: 0; width: min(28rem, 32vw); }
 }
 .lost {
@@ -910,6 +909,19 @@ button:disabled, input:disabled, select:disabled, textarea:disabled { opacity: 0
   transform: rotate(-6deg);
 }
 .lost h1 { max-width: 12ch; }
+.steps { list-style: none; margin: var(--space-5) 0 0; padding: 0; counter-reset: step; }
+.steps li { border-top: 1px solid var(--rule); padding: 1rem 0 1.1rem; }
+.steps h3 { font-size: clamp(1.6rem, 3vw, 2.2rem); }
+.steps h3::before {
+  counter-increment: step;
+  content: counter(step, decimal-leading-zero) " ";
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--ochre);
+  font-weight: 400;
+}
+.craft-note { font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.04em; color: var(--muted); }
 
 @media print {
   .mast, .footer, .spine, .stamp, .nav-fold { display: none !important; }

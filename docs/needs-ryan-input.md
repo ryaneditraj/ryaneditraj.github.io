@@ -6,16 +6,17 @@ School, village, and street stay off every page, including this one. Age 16 is s
 
 ## On the site
 
-- Hero: “I build security and AI products, and I explain tech so anyone can use it.”
-- Positioning: the bridge from non-tech to tech.
-- Build: Thugir Labs, MoneyRadar, IndiQuant, Trinity One, KL-ctf, Placement Karo, Hack Club builds. Each has a plain-English line and a link.
-- Learn: Instagram @ryaneditraj (no follower count), the Medium essay of 2 June 2026, the Thugir Labs YouTube demo, and `/learn/start`.
-- Proof wall: live sites, public repos, the YouTube demo, the essay, and Liya Tech as participation only.
+- He is positioned as a technical founder who builds and operates tech for companies: web, apps, AI and automation, and fractional CTO / technical operations.
+- Thugir Labs is the technical centrepiece: high-end AI security research, an autonomous engine that reasons instead of only scanning, closed beta, with thugir.com and the YouTube demo.
+- Other products sit under selected work. No client names, testimonials, or prices are published.
+- The homepage says this site was designed and built by him. The portrait is still `public/ryan.jpg`.
 - Contact is the form at `/contact`. No street address.
 
 ## TODO(Ryan)
 
-- Instagram followers. A third-party viewer (imginn) showed a count on 23 October 2026. Instagram itself needs a login, so the number is not on the site. Confirm it, or leave it off. Same for the “30M+ views” line in that indexed bio, and for which reels should lead `/learn/start`.
+- Fractional CTO. Say how an engagement starts, how long you stay, and what you will not own. No retainer is published.
+- Service deliverables and fees for web, apps, AI and automation, and the fractional seat. The form’s budget ranges are questions, not quotes.
+- Instagram views. Ryan confirmed about 328K followers on 24 October 2026. The site publishes that as 300K+. The “30M+ views” line in an indexed bio is still unconfirmed, and so are the reels that should lead `/learn/start`.
 - Thugir Labs audience. The live site is a closed beta titled autonomous security research. X and LinkedIn still say network security for law and healthcare. Which audience is current?
 - Placement Karo pricing. The live page shows a free check, a paid report, and a monthly plan. That does not match an unverified story about college partnerships and staffing. Which model is real, and is the product officially yours? The Vercel team name is the link used on the site.
 - Portrait. The homepage uses the GitHub avatar (github.com/ryaneditraj.png), pushed to high-contrast black and white, saved at `public/ryan.jpg`. TODO(Ryan): drop a higher-resolution photo at that same path if you want it sharper. The page will pick it up. No other photo was found.

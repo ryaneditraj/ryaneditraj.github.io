@@ -34,7 +34,7 @@ export default function StartPage() {
         </li>
         <li>
           <h2>Follow the account</h2>
-          <p className="measure">Instagram is where the ongoing explanation lives. The handle is @ryaneditraj. This page does not print a follower count.</p>
+          <p className="measure">Instagram is where the ongoing explanation lives. 300K+ followers, @ryaneditraj, confirmed 24 October 2026.</p>
           <p>
             <a href="https://www.instagram.com/ryaneditraj/">@ryaneditraj</a>
           </p>

@@ -15,7 +15,7 @@ export default function MediaKitPage() {
     <Shell section="Media kit">
       <p className="kicker">Media kit</p>
       <h1>Facts a producer can check</h1>
-      <p className="lede">Two profile counts, each with a date. An Instagram follower figure is not here. Neither is a street address.</p>
+      <p className="lede">Profile counts, each with a date. Instagram is 300K+, confirmed by Ryan. No street address.</p>
       <p>
         <a className="stamp" href="/media-kit/download">
           Download the kit
@@ -24,7 +24,7 @@ export default function MediaKitPage() {
       <section className="section">
         <h2>Positioning</h2>
         <p className="measure">
-          {site.name} is 16 and is based in {site.location}. {site.positioning} He builds security and AI products, including MoneyRadar and Thugir Labs, and explains them in public. Instagram is @ryaneditraj.
+          {site.name} is 16 and is based in {site.location}. {site.positioning} Web, apps, AI and automation, and fractional CTO work. His own ventures sit below that. Instagram is @ryaneditraj.
         </p>
         <p className="meta">Sources: X bio, Instagram handle, moneyradar.in/about/ryan-editraj, Medium essay of 2 June 2026. Checked 23 October 2026.</p>
       </section>
@@ -57,9 +57,9 @@ export default function MediaKitPage() {
       <section className="section">
         <h2>Boilerplate</h2>
         <p className="measure">
-          {site.name} is 16 and is based in {site.location}. He is a creator-founder: he builds security and AI products, and he explains tech so anyone can use it. He is founder of MoneyRadar and of Thugir Group. Instagram is @ryaneditraj.
+          {site.name} is 16 and is based in {site.location}. He is a technical founder who builds and operates tech for companies. Ventures he has built include MoneyRadar and Thugir Labs. Instagram is @ryaneditraj. No client list is included.
         </p>
-        <p className="todo">TODO(Ryan): add a portrait only when you supply the file. This kit does not use a stock photo.</p>
+        <p className="todo">TODO(Ryan): the site portrait is public/ryan.jpg, from the GitHub avatar. Replace that file if you want a different photo.</p>
       </section>
       <section className="section">
         <h2>Contact</h2>

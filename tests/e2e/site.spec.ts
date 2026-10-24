@@ -10,11 +10,13 @@ test.beforeAll(() => {
 
 test("home states who Ryan is and how to collaborate", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("heading", { level: 1, name: "I build. I explain. So tech feels possible." })).toBeVisible();
-  await expect(page.getByRole("heading", { level: 2, name: "Why I build" })).toBeVisible();
-  await expect(page.getByRole("heading", { level: 2, name: "Come learn with me" })).toBeVisible();
-  await expect(page.getByRole("link", { name: "Follow @ryaneditraj" })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 1, name: "I build. For companies. Web, apps, AI, ops." })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 2, name: "Services" })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 2, name: "How I work" })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 2, name: "Selected work" })).toBeVisible();
+  await expect(page.locator(".cta-band").getByRole("link", { name: "Start a project" })).toBeVisible();
   await expect(page.getByRole("img", { name: "Black and white portrait of Ryan Editraj." })).toBeVisible();
+  await expect(page.getByText("This site was designed and built by me.").first()).toBeVisible();
 });
 
 test("unknown routes and the old gallery", async ({ page }) => {

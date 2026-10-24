@@ -1,5 +1,14 @@
 [
   {
+    "id": "instagram-followers",
+    "label": "Instagram followers",
+    "value": "300K+",
+    "note": "Ryan confirmed about 328K followers on 24 October 2026. The public figure is 300K+. Handle @ryaneditraj.",
+    "source": "Confirmed by Ryan Editraj, 24 October 2026.",
+    "asOf": "2026-10-24",
+    "status": "published"
+  },
+  {
     "id": "linkedin-followers",
     "label": "LinkedIn followers",
     "value": "1,816",

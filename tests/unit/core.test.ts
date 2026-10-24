@@ -148,7 +148,8 @@ describe("content", () => {
       expect(text).toContain(name);
     }
     expect(text).toContain("@ryaneditraj");
-    expect(text).not.toMatch(/328|follower count is \d|CVSS|138,936|patent pending|first place|placed first/i);
+    expect(text).toContain("300K+");
+    expect(text).not.toMatch(/CVSS|138,936|patent pending|first place|placed first/i);
     expect(learnRows.some((row) => row.links.some((link) => link.href.includes("medium.com")))).toBe(true);
     expect(learnRows.some((row) => row.links.some((link) => link.href.includes("youtube.com")))).toBe(true);
   });

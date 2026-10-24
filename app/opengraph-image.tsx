@@ -3,7 +3,7 @@ import path from "node:path";
 import { ImageResponse } from "next/og";
 
 export const runtime = "nodejs";
-export const alt = "Ryan Editraj. I build. I explain. So tech feels possible.";
+export const alt = "Ryan Editraj. I build for companies. Web, apps, AI, ops.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -27,8 +27,8 @@ export default function OpenGraphImage() {
         }}
       >
         <div style={{ fontSize: 22, letterSpacing: 3 }}>RYAN EDITRAJ, 16, TAMIL NADU</div>
-        <div style={{ fontSize: 68, lineHeight: 0.92, maxWidth: 1000 }}>I build. I explain. So tech feels possible.</div>
-        <div style={{ fontSize: 26 }}>The bridge from non-tech to tech.</div>
+        <div style={{ fontSize: 68, lineHeight: 0.92, maxWidth: 1000 }}>I build. For companies.</div>
+        <div style={{ fontSize: 26 }}>Web, apps, AI, and technical operations.</div>
       </div>
     ),
     { ...size, fonts: [{ name: "Fraunces", data: font, weight: 600, style: "normal" }] },

@@ -8,9 +8,9 @@ export type LaneRow = {
   state?: string;
 };
 
-export const hero = "I build. I explain. So tech feels possible.";
+export const hero = "I build. For companies. Web, apps, AI, ops.";
 
-export const mission = "I build security and AI products, and I explain tech so anyone can use it.";
+export const mission = "I build and operate tech for companies: web, apps, AI and automation, and technical operations.";
 
 export const bridge = "The bridge from non-tech to tech.";
 
@@ -18,7 +18,7 @@ export const buildRows: LaneRow[] = [
   {
     name: "Thugir Labs",
     state: "Closed beta",
-    line: "Security work is hard to see, and harder to trust. I am building a closed beta that does the research and keeps a proof of what it found, so a person can look at the work. Who it is for is still open.",
+    line: "Frontier work: high-end AI security research. An autonomous engine that reasons, instead of only scanning. Closed beta.",
     links: [
       { href: "https://thugirlabs.com", label: "thugirlabs.com" },
       { href: "https://thugir.com", label: "thugir.com" },
@@ -57,7 +57,7 @@ export const buildRows: LaneRow[] = [
   {
     name: "KL-ctf",
     state: "Built",
-    line: "A security competition falls apart if nothing runs the exercise. KL-ctf is the harness I built for one. I do not describe the challenges here.",
+    line: "A harness I built so a competition exercise can run. I do not describe the challenges here.",
     links: [
       { href: "https://github.com/ryaneditraj/KL-ctf", label: "Repository" },
       { href: "/lab/kl-ctf", label: "Notes" },
@@ -86,7 +86,7 @@ export const buildRows: LaneRow[] = [
 export const learnRows: LaneRow[] = [
   {
     name: "Instagram",
-    line: "If tech feels like a room you were not invited into, this is where I talk like a person. The handle is @ryaneditraj. I do not print a follower count.",
+    line: "300K+ followers on Instagram. The handle is @ryaneditraj. Ryan confirmed the count on 24 October 2026.",
     links: [{ href: "https://www.instagram.com/ryaneditraj/", label: "@ryaneditraj" }],
   },
   {
@@ -150,6 +150,12 @@ export const proofRows: { item: string; check: string; href: string; label: stri
     check: "Published 2 June 2026 under @ryaneditraj.",
     href: "https://medium.com/@ryaneditraj/a-16-year-old-founders-prediction-the-next-cybersecurity-crisis-will-be-powered-by-ai-6cbd75ad947a",
     label: "Read",
+  },
+  {
+    item: "300K+ on Instagram",
+    check: "Ryan confirmed the follower count on 24 October 2026. The public line is 300K+.",
+    href: "https://www.instagram.com/ryaneditraj/",
+    label: "@ryaneditraj",
   },
   {
     item: "He took part in Liya Tech",

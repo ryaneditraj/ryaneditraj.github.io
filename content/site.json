@@ -1,6 +1,6 @@
 {
   "name": "Ryan Editraj",
-  "positioning": "The bridge from non-tech to tech.",
+  "positioning": "A technical founder. I build and operate tech for companies.",
   "location": "Tamil Nadu, India",
   "timezone": "Asia/Kolkata",
   "email": "ryaneditraj@gmail.com",
@@ -8,7 +8,7 @@
     {
       "label": "Instagram",
       "href": "https://www.instagram.com/ryaneditraj/",
-      "note": "Handle @ryaneditraj. No follower count is published."
+      "note": "300K+ followers. Confirmed by Ryan on 24 October 2026. Handle @ryaneditraj."
     },
     {
       "label": "X",
@@ -32,10 +32,10 @@
     }
   ],
   "nav": [
-    { "href": "/build", "label": "Build" },
-    { "href": "/learn", "label": "Learn" },
-    { "href": "/learn/start", "label": "New to tech" },
-    { "href": "/contact", "label": "Contact" }
+    { "href": "/services", "label": "Services" },
+    { "href": "/work", "label": "Work" },
+    { "href": "/about", "label": "About" },
+    { "href": "/contact", "label": "Start a project" }
   ],
   "budgetRanges": [
     "Not sure yet",

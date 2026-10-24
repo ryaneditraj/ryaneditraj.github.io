@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useRef } from "react";
 
-export function PortraitStage({ mission }: { mission: string }) {
+export function PortraitStage({ line }: { line: string }) {
   const ref = useRef<HTMLElement>(null);
 
   return (
@@ -38,25 +38,12 @@ export function PortraitStage({ mission }: { mission: string }) {
       <p className="rubber">Since about 12</p>
       <h1>
         <span className="slab slab-ink">I build.</span>
-        <span className="slab slab-red">I explain.</span>
-        <span className="slab slab-paper">So tech feels possible.</span>
+        <span className="slab slab-red">For companies.</span>
+        <span className="slab slab-paper">Web, apps, AI, ops.</span>
       </h1>
-      <div className="terminal">
-        <p>
-          <span>$</span> whoami
-        </p>
-        <p>ryaneditraj — security and AI, explained in public</p>
-        <p>
-          <span>$</span> mission
-        </p>
-        <p>{mission}</p>
-        <p>
-          <span>$</span> now
-        </p>
-        <p>thugir labs, closed beta · moneyradar, live · @ryaneditraj</p>
-      </div>
+      <p className="studio-card">{line}</p>
       <p className="stage-note">
-        I have been coding since I was about 12. I build security and AI products, and I explain them for people who think this field is not for them. About 12 is an old public listing, not a diary. The portrait is my GitHub photo, in black and white.
+        Technical founder. Freelance, and a fractional CTO when a company wants a partner for the build and the operations. This site was designed and built by me. The portrait file is public/ryan.jpg, ready to swap.
       </p>
     </section>
   );
